@@ -24,7 +24,7 @@ Download [SystemDynamics v2.1 (2013-10-16)](../../archive/v2.1.zip)
 ## License
 
 This Modelica package is free software and the use is completely at your own risk;
-it can be redistributed and/or modified under the terms of the [Modelica License 2](https://modelica.org/licenses/ModelicaLicense2).
+it can be redistributed and/or modified under the terms of the [Modelica License 1.1](SystemDynamics 2.1/Resources/ModelicaLicense1.1.txt).
 
 ## Development and contribution
 
