@@ -11,9 +11,11 @@ The documentation is included in the source code package.
 
 ## Current release
 
-Download [SystemDynamics v2.0 (2007-09-13)](../../archive/v2.0.zip)
+Download [SystemDynamics v2.1 (2013-10-16)](../../archive/v2.1.zip)
 
 #### Release notes
+* [Version v2.1 (2013-10-16)](../../archive/v2.1.zip)
+  * `SystemDynamics 2.1` is based on SystemDynamics Version 2.0 that was developed by Prof. Cellier and his students, and has been primarily updated in order for it to work with MSL 3.2.1. The diagrams has been corrected from the old graphical definitions and some icons have been added.
 * [Version v2.0 (2007-09-13)](../../archive/v2.0.zip)
   * `SystemDynamics 2.0` constitutes a completely reworked release of the SystemDynamics library. This version is based in part on Version 1.0, and in part on a different and independently created version of a System Dynamics library for Dymola/Modelica, a version that had been developed by Prof. Cellier and his students at the University of Arizona, and had been around in a much reduced form since 2001.
 * Version v1.0 (2002-04-09)
