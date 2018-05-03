@@ -47,7 +47,7 @@ Typical tools for such purposes would include <font color=red><b>ARENA</b></font
 
 <ol>
 <li> Kelton, W.D., R.P. Sadowski, and D.T. Sturrock (2003), <a href=\"http://www.amazon.com/Simulation-Arena-CD-Rom-David-Kelton/dp/0072919817\">Simulation with Arena</a>, 3<sup>rd</sup> Edition, McGraw-Hill, 672 p.
-<li> Prat, V.S., A.Urqu�a, and S. Dormido (2006), <a href=\"http://www.modelica.org/events/modelica2006/Proceedings/sessions/Session5c2.pdf\">ARENALib: A Modelica Library for Discrete-Event System
+<li> Prat, V.S., A.Urquia, and S. Dormido (2006), <a href=\"http://www.modelica.org/events/modelica2006/Proceedings/sessions/Session5c2.pdf\">ARENALib: A Modelica Library for Discrete-Event System
 Simulation</a>, <i>Proc. 6<sup>th</sup> Modelica Conference</i>, Vienna, Austria, pp.539-548.
 </ol> <p>
 </html>", revisions = ""));
@@ -81,7 +81,7 @@ The <font color=red><b>Modelica</b></font> implementations of the two methodolog
 
 <ol>
 <li> Kelton, W.D., R.P. Sadowski, and D.T. Sturrock (2003), <a href=\"http://www.amazon.com/Simulation-Arena-CD-Rom-David-Kelton/dp/0072919817\">Simulation with Arena</a>, 3<sup>rd</sup> Edition, McGraw-Hill, 672 p.
-<li> Prat, V.S., A.Urqu�a, and S. Dormido (2006), <a href=\"http://www.modelica.org/events/modelica2006/Proceedings/sessions/Session5c2.pdf\">ARENALib: A Modelica Library for Discrete-Event System
+<li> Prat, V.S., A.Urquia, and S. Dormido (2006), <a href=\"http://www.modelica.org/events/modelica2006/Proceedings/sessions/Session5c2.pdf\">ARENALib: A Modelica Library for Discrete-Event System
 Simulation</a>, <i>Proc. 6<sup>th</sup> Modelica Conference</i>, Vienna, Austria, pp.539-548.
 </ol> <p>
 </html>"));
