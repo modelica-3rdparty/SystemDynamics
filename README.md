@@ -11,9 +11,11 @@ The documentation is included in the source code package.
 
 ## Current release
 
-Download [SystemDynamics v2.1 (2013-10-16)](../../archive/v2.1.zip)
+Download [SystemDynamics v2.1.1 (2020-01-13)](../../archive/v2.1.1.zip)
 
 #### Release notes
+* [Version v2.1.1 (2020-01-13)](../../archive/v2.1.1.zip)
+  * `SystemDynamics 2.1.1` is a bugfix release only to fix some annotations and illegaly used characters. It was at the same time updated to work with MSL 3.2.3. The license was changed (in agreement with the copyright holders) to 3-Clause BSD License.
 * [Version v2.1 (2013-10-16)](../../archive/v2.1.zip)
   * `SystemDynamics 2.1` is based on SystemDynamics Version 2.0 that was developed by Prof. Cellier and his students, and has been primarily updated in order for it to work with MSL 3.2.1. The diagrams have been corrected from the old graphical definitions and some icons have been added.
 * [Version v2.0 (2007-09-13)](../../archive/v2.0.zip)
@@ -24,7 +26,7 @@ Download [SystemDynamics v2.1 (2013-10-16)](../../archive/v2.1.zip)
 ## License
 
 This Modelica package is free software and the use is completely at your own risk;
-it can be redistributed and/or modified under the terms of the [Modelica License 1.1](SystemDynamics 2.1/Resources/ModelicaLicense1.1.txt).
+it can be redistributed and/or modified under the terms of the [3-Clause BSD License](LICENSE).
 
 ## Development and contribution
 
