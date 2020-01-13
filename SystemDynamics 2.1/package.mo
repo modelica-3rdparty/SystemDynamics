@@ -1,10 +1,10 @@
-package SystemDynamics "System Dynamics Library (Version 2.1)"
+package SystemDynamics "System Dynamics Library (Version 2.1.1)"
   package UsersGuide "User's Guide"
-    extends Modelica.Icons.Info;
+    extends Modelica.Icons.Information;
     package Overview "Overview of Library"
-      extends Modelica.Icons.Info;
+      extends Modelica.Icons.Information;
       class Introduction "An Introduction to System Dynamics"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 <p><span style=\"color: #008000; font-size: large;\"><strong>System Dynamics</strong></span> is a modeling methodology designed by <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester</a> in the 1960s and 1970s for modeling and simulating mass and information flows of continuous-time systems in the soft sciences.</p>
 <p>It is a low-level modeling methodology.  The software behind this library is not more complex than that behind the Block library.  Thus, the value of this library is not so much in the software modules themselves as it is in the application examples.</p>
@@ -33,7 +33,7 @@ package SystemDynamics "System Dynamics Library (Version 2.1)"
 </p></html>", revisions = ""));
       end Introduction;
       class Industry "Industrial Dynamics"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 This is the oldest application area of System Dynamics.  In fact, the System Dynamics methodology had been originally invented by <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester</a> to describe processes of factory automation. <p>
 
@@ -53,7 +53,7 @@ Simulation</a>, <i>Proc. 6<sup>th</sup> Modelica Conference</i>, Vienna, Austria
 </html>", revisions = ""));
       end Industry;
       class Population "Population Dynamics"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 The System Dynamics methodology is frequently being used for the description of complex interactions between different biological species.  This application area, which forms part of the ecological sciences, is usually referred to as <font color=red><b>population dynamics</b></font>. <p>
 
@@ -61,7 +61,7 @@ This is still one of the most popular application areas of the System Dynamics m
 </html>", revisions = ""));
       end Population;
       class City "Urban Dynamics"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 <font color=red><b>Urban Dynamics</b></font> describes an application area that is located somewhere in between <font color=red><b>World Dynamics</b></font> and <font color=red><b>Industrial Dynamics</b></font>.  It includes application areas such as the studying of traffic flows in an inner city or along a freeway. <p>
 
@@ -87,7 +87,7 @@ Simulation</a>, <i>Proc. 6<sup>th</sup> Modelica Conference</i>, Vienna, Austria
 </html>"));
       end City;
       class World "World Dynamics"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 One of the most important applications of the System Dynamics methodology are the set of world models that were developed primarily by the M.I.T. group around Profs. <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester</a> and <a href=\"http://en.wikipedia.org/wiki/Dennis_Meadows\">Dennis Meadows</a>. <p>
 
@@ -97,7 +97,7 @@ This work, which started in the early 1970s, has recently gained renewed importa
 </html>", revisions = ""));
       end World;
       class Literature "Literature"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 <b>References:</b> <p>
 
@@ -138,9 +138,9 @@ This overview contains the following sections: <p>
 </html>"));
     end Overview;
     package Versions "Release Notes"
-      extends Modelica.Icons.Info;
+      extends Modelica.Icons.Information;
       class Version_1_0 "old -> Version 1.0 (April 9, 2002)"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 <font color=red><b>SystemDynamics 1.0</b></font> constituted the first official release
 of the <font color=red><b>SystemDynamics</b></font> library. That version was created by Stefan Fabricius in 2002, at a time when Stefan worked as a Ph.D. student at ETH Zurich.  After his graduation in 2003, Stefan decided to work in industry.  His current address is: <p>
@@ -157,7 +157,7 @@ of the <font color=red><b>SystemDynamics</b></font> library. That version was cr
 </html>"));
       end Version_1_0;
       class Version_2_0 "Version 1.0 -> Version 2.0 (September 13, 2007)"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 <font color=red><b>SystemDynamics 2.0</b></font> constitutes a completely reworked release
 of the <font color=red><b>SystemDynamics</b></font> library.  This version is based in part
@@ -183,7 +183,7 @@ be used by Dr. Cellier's students. <p>
 </html>", revisions = ""));
       end Version_2_0;
       class Version_2_1 "Version 2.0 -> Version 2.1 (October 16, 2013)"
-        extends Modelica.Icons.Info;
+        extends Modelica.Icons.Information;
         annotation(Documentation(info = "<html>
 <p><span style=\"color: red;\"><strong>SystemDynamics 2.1</strong></span> is a reworked release of the <span style=\"color: red;\"><strong>SystemDynamics 2.0</strong></span> library.  This version is based on Version 2.0 that was developed by Prof. Cellier and his students, and have been primarily updated in order for it to work with MSL 3.2.1. The diagrams has been corrected from the old graphical definitions and some icons have been added.</p>
 <ul>
@@ -216,7 +216,7 @@ Library <b>SystemDynamics</b> is a <b>free</b> Modelica package providing compon
 </html>", revisions = ""));
   end UsersGuide;
   package Interfaces "Connectors and partial models of the System Dynamics methodology"
-    extends Modelica.Icons.Library;
+    extends Modelica.Icons.Package;
     connector MassInPort = Modelica.Blocks.Interfaces.RealInput "Mass flow input signal" annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Polygon(visible = true, lineColor = {95,0,191}, fillColor = {95,0,191}, fillPattern = FillPattern.Solid, points = {{0.0,50.0},{100.0,0.0},{0.0,-50.0},{0.0,50.0}})}), Icon(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Polygon(points = {{-100,100},{100,0},{-100,-100},{-100,100}}, fillPattern = FillPattern.Solid, lineColor = {95,0,191}, fillColor = {95,0,191})}));
     connector MassOutPort = Modelica.Blocks.Interfaces.RealOutput "Mass flow output signal" annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Polygon(visible = true, lineColor = {95,0,191}, fillColor = {255,255,255}, fillPattern = FillPattern.Solid, points = {{-100.0,50.0},{0.0,0.0},{-100.0,-50.0},{-100.0,50.0}})}), Icon(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Polygon(points = {{-100,100},{100,0},{-100,-100},{-100,100}}, fillPattern = FillPattern.Solid, lineColor = {95,0,191}, fillColor = {255,255,255})}));
     partial block Nonlin_0 "Non-linear function with zero inputs"
@@ -264,7 +264,7 @@ This package contains the mass flow connectors of the System Dynamics methodolog
 </html>"));
   end Interfaces;
   package Auxiliary "Auxiliary elements of the System Dynamics methodology"
-    extends Modelica.Icons.Library;
+    extends Modelica.Icons.Package;
     block Const "A constant factor"
       parameter Real k = 0 "Constant additive term";
       Modelica.Blocks.Interfaces.RealOutput y "Output variable" annotation(Placement(visible = true, transformation(origin = {0.0,70.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = -270), iconTransformation(origin = {0.0,70.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = -270)));
@@ -335,7 +335,7 @@ This package contains a set of simple static relationships that are frequently u
 </html>"));
   end Auxiliary;
   package Functions "Functions of the System Dynamics methodology"
-    extends Modelica.Icons.Library annotation(preferedView = "info", Documentation(info = "<html>
+    extends Modelica.Icons.Package annotation(preferedView = "info", Documentation(info = "<html>
 This package contains a number of standard functional relationships used in the System Dynamics methodology.
 </html>"));
     block Dead_Time "Delay function"
@@ -366,9 +366,9 @@ This package contains a number of standard functional relationships used in the 
       connect(state,Level1.y1) annotation(Line(points = {{7.6667,66.0},{7.6667,-33.0},{-15.3333,-33.0}}, color = {0,0,191}, visible = true, origin = {-7.6667,44.0}));
       annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,191}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{100.0,100.0}}),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, extent = {{-64.0,-44.0},{68.0,42.0}}, textString = "DELAY1", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Documentation(info = "<html>
 This is a first-order exponential delaying function.  It describes the delaying of mass flows. <p>
- 
+
 Incoming goods are delayed temporarily in an internal state.  The <b>state</b> output represents the amount of goods currently stored in the DELAY block. <p>
- 
+
 The initial number of items in the DELAY block can be set.  By default, it assumes a value of zero.
 </html>"));
     end DELAY1;
@@ -408,9 +408,9 @@ The initial number of items in the DELAY block can be set.  By default, it assum
       connect(Add3.y,state) annotation(Line(points = {{70.0,81.0},{70.0,90.0},{0.0,90.0},{0.0,110.0}}, color = {0,0,191}, visible = true));
       annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,191}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{100.0,100.0}}),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, extent = {{-64.0,-44.0},{68.0,42.0}}, textString = "DELAY3", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Documentation(info = "<html>
 This is a third-order exponential delaying function.  It describes the delaying of mass flows. <p>
- 
+
 Incoming goods are delayed temporarily in three consecutive internal states.  The <b>state</b> output represents the amount of goods currently stored in the DELAY block. <p>
- 
+
 The initial number of items in the DELAY block can be set.  By default, it assumes a value of zero.
 </html>"));
     end DELAY3;
@@ -443,12 +443,12 @@ This is a linear function, as it is frequently used in System Dynamics to repres
       connect(y,Smooth_of_Input.y1) annotation(Line(points = {{110.0,0.0},{80.0,0.0},{80.0,7.7},{63.6,7.7}}, color = {0,0,191}, visible = true));
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,191}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{100.0,100.0}}),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, extent = {{-64.0,-44.0},{68.0,42.0}}, textString = "SMTH1", fontName = "Arial")}), Documentation(info = "<html>
 This is a first-order exponential smoothing function.  It describes the smoothing of information flows. <p>
- 
+
 In engineering terms, this would be called a first-order low-pass filter with the transfer function: <p>
 <font color=red><b>G(s) = 1/(tau*s + 1)</b></font> <p>
 and the time constant <p>
 <font color=red><b>tau = averaging_time</b></font>. <p>
- 
+
 The initial value of the output can be set.  By default, it assumes a value of zero.
 </html>"));
     end SMTH1;
@@ -488,12 +488,12 @@ The initial value of the output can be set.  By default, it assumes a value of z
       connect(y,Smooth3.y1) annotation(Line(points = {{110.0,0.0},{90.0,0.0},{90.0,-46.3},{83.6,-46.3}}, color = {0,0,191}, visible = true));
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,191}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{100.0,100.0}}),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, extent = {{-64.0,-44.0},{68.0,42.0}}, textString = "SMTH3", fontName = "Arial")}), Documentation(info = "<html>
 This is a third-order exponential smoothing function. <p>
- 
+
 In engineering terms, this would be called a third-order low-pass filter consisting of three first-order low-pass filters placed in series.  The third-order filter is characterized by the transfer function: <p>
 <font color=red><b>G(s) = (1/(tau*s + 1))^3</b></font>. <p>
 Each first-order filter has a time constants of: <p>
 <font color=red><b>tau = averaging_time/3</b></font>. <p>
- 
+
 The initial values of the outputs of each of the three first-order filters can be set.  However, they can only be set together, i.e., only one parameter is provided for all three of them.  By default, they assume values of zero.
 </html>"));
     end SMTH3;
@@ -509,7 +509,7 @@ This is a tabular function, as it is frequently used in System Dynamics to repre
 </html>"));
     end Tabular;
     package Utilities "Utility modules of the set of functions"
-      extends Modelica.Icons.Library annotation(preferedView = "info", Documentation(info = "<html>
+      extends Modelica.Icons.Package annotation(preferedView = "info", Documentation(info = "<html>
 Utility models of the set of functions.
 </html>"));
       block Change_In_Smooth "Smoothing rate"
@@ -528,7 +528,7 @@ Utility models of the set of functions.
       function InitRandomNormal
         extends Modelica.Icons.Function;
 
-        external "C" ext_initRandomNormal()         annotation(Include = "#include <ext_initRandomNormal.c>"); 
+        external "C" ext_initRandomNormal()         annotation(Include = "#include <ext_initRandomNormal.c>");
         annotation(Diagram(coordinateSystem(extent = {{-148.5,-105.0},{148.5,105.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {5,5})));
       end InitRandomNormal;
       function RandomNormal
@@ -551,7 +551,7 @@ Utility models of the set of functions.
         assert(size(x_grid, 1) == size(y_grid, 1), "Size mismatch");
         assert(x >= x_grid[1] and x <= x_grid[n], "Out of range");
         for i in 1:n - 1 loop
-                  if x >= x_grid[i] and x <= x_grid[i + 1] then 
+                  if x >= x_grid[i] and x <= x_grid[i + 1] then
             y:=y_grid[i] + (y_grid[i + 1] - y_grid[i]) * (x - x_grid[i]) / (x_grid[i + 1] - x_grid[i]);
           else
 
@@ -568,17 +568,17 @@ Utility models of the set of functions.
     equation
       when initial() then
               SystemDynamics.Functions.Utilities.InitRandomNormal();
-      
+
       end when;
       when sample(0, tSample) then
               y = mean + stdev * SystemDynamics.Functions.Utilities.RandomNormal(time);
-      
+
       end when;
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, extent = {{-80.0,-80.0},{80.0,80.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-0.0,-124.0},{0.0,-80.0}}, textString = "%name", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-6.0,36.0},{-6.0,68.0}}, textString = "mean=%mean", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-4.0,-6.0},{-4.0,24.0}}, textString = "stdev=%stdev", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-2.0,-54.0},{-2.0,-24.0}}, textString = "tSample=%tSample", fontName = "Arial")}));
     end NoiseNormal;
   end Functions;
   package Levels "Levels of the System Dynamics methodology"
-    extends Modelica.Icons.Library annotation(preferedView = "info", Documentation(info = "<html>
+    extends Modelica.Icons.Package annotation(preferedView = "info", Documentation(info = "<html>
 This package contains a set of different <b>Levels</b> (integrators of state variables) frequently used in the System Dynamics methodology.
 </html>"));
     block Level "General System Dynamics level"
@@ -638,7 +638,7 @@ This is the general continuous <b>Level</b> model of the System Dynamics methodo
       connect(y2,Integrator1.y) annotation(Line(points = {{6.3333,-43.3333},{6.3333,21.6667},{-12.6667,21.6667}}, color = {95,0,191}, visible = true, origin = {-6.3333,-21.6667}));
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Line(visible = true, points = {{-100.0,0.0},{-80.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,70.0},{100.0,100.0}}, textString = "%name", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,-6.0},{80.0,20.0}}, textString = "x0 = %x0", fontName = "Arial"),Line(visible = true, points = {{80.0,0.0},{100.0,0.0}}, color = {127,0,255}, thickness = 0.5)}), Documentation(info = "<html>
 This is the continuous controlling <b>Level</b> model of the System Dynamics methodology with a single inflow and a single outflow.  It computes the level by integrating over the difference between inflow and outflow rates. <p>
- 
+
 Once the level reaches its maximum allowed value, it sends a Boolean signal to its inflow rate element to tell it to stop sending more stuff.  Once it reaches its minimum allowed value, it sends a Boolean signal to its outflow rate element to tell it to stop demanding more stuff.
 </html>"));
     end CLevel;
@@ -665,7 +665,7 @@ Once the level reaches its maximum allowed value, it sends a Boolean signal to i
       y5 = pre(level);
       when sample(1, 1) then
               level = pre(level) + h * (rate_in - rate_out);
-      
+
       end when;
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,127}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Line(visible = true, points = {{-100.0,0.0},{-80.0,0.0}}, color = {95,0,191}, thickness = 0.5),Line(visible = true, points = {{80.0,0.0},{110.0,0.0}}, color = {95,0,191}, thickness = 0.5)}), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,127}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,-6.0},{80.0,20.0}}, textString = "x0 = %x0", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,70.0},{100.0,100.0}}, textString = "%name", fontName = "Arial"),Line(visible = true, points = {{-100.0,0.0},{-80.0,0.0}}, color = {127,0,255}, thickness = 0.5),Line(visible = true, points = {{80.0,0.0},{100.0,0.0}}, color = {127,0,255}, thickness = 0.5)}), Documentation(info = "<html>
 This is the general discrete <b>Level</b> model of the System Dynamics methodology.  It computes the level by a Forward Euler algorithm, i.e., by solving a difference equation with a fixed step size of 1 time unit.  The classical System Dynamics methodology operates on discrete levels only.
@@ -696,17 +696,17 @@ This is the general discrete <b>Level</b> model of the System Dynamics methodolo
       der(level) = if level > xm then dir * (rate_in - rate_out) else 0;
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,127,0}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Line(visible = true, points = {{-100.0,0.0},{-80.0,0.0}}, color = {127,0,255}, thickness = 0.5),Line(visible = true, points = {{80.0,0.0},{110.0,0.0}}, color = {127,0,255}, thickness = 0.5)}), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,127,0}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Line(visible = true, points = {{-100.0,0.0},{-80.0,0.0}}, color = {127,0,255}, thickness = 0.5),Line(visible = true, points = {{80.0,0.0},{100.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,70.0},{100.0,100.0}}, textString = "%name", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,-6.0},{80.0,20.0}}, textString = "x0 = %x0", fontName = "Arial")}), Documentation(info = "<html>
 This is a time-reversible continuous <b>Level</b> model of the System Dynamics methodology. <p>
- 
+
 Given the following state-space model: <p>
- 
+
 <font color=red>der</font>(<b>x</b>) = <b>f</b>(<b>x</b>,t); <p>
- 
+
 Time reversal can be achieved by placing a minus sign in front of each state equation: <p>
- 
+
 <font color=red>der</font>(<b>x</b>) = -<b>f</b>(<b>x</b>,t); <p>
- 
+
 The <i>Reverse_Level</i> model contains a modulating variable <b>dir</b> that determines the direction of time flow: <p>
- 
+
 <font color=red>der</font>(<b>x</b>) = dir*<b>f</b>(<b>x</b>,t);
 </html>"));
     end Reverse_Level;
@@ -756,7 +756,7 @@ This is the general continuous <b>Level</b> model of the System Dynamics methodo
       connect(y3,Integrator1.y) annotation(Line(points = {{0.0,-65.0},{0.0,-50.0},{60.0,-50.0},{60.0,0.0},{-39.0,0.0}}, color = {95,0,191}, visible = true));
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Line(visible = true, points = {{-100.0,0.0},{-80.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,70.0},{100.0,100.0}}, textString = "%name", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,-6.0},{80.0,20.0}}, textString = "x0 = %x0", fontName = "Arial")}), Documentation(info = "<html>
 This is the continuous controlling <b>Level</b> model of the System Dynamics methodology with a single inflow and no outflow.  It computes the level by integrating over the inflow rate. <p>
- 
+
 Once the level reaches its maximum allowed value, it sends a Boolean signal to its inflow rate element to tell it to stop sending more stuff.
 </html>"));
     end CLevel1a;
@@ -809,7 +809,7 @@ This is the general continuous <b>Level</b> model of the System Dynamics methodo
       connect(y3,Integrator1.y) annotation(Line(points = {{-75.0,-65.0},{-75.0,-50.0},{0.0,-50.0},{0.0,0.0},{-19.0,0.0}}, color = {95,0,191}, visible = true));
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-60.0},{80.0,20.0}}),Rectangle(visible = true, lineColor = {127,0,255}, lineThickness = 0.5, extent = {{-80.0,-60.0},{80.0,60.0}}),Line(visible = true, points = {{80.0,0.0},{100.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,70.0},{100.0,100.0}}, textString = "%name", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,-6.0},{80.0,20.0}}, textString = "x0 = %x0", fontName = "Arial")}), Documentation(info = "<html>
 This is the continuous controlling <b>Level</b> model of the System Dynamics methodology with a single outflow and no inflow.  It computes the level by integrating over the negative outflow rate. <p>
- 
+
 Once the level reaches its minimum allowed value, it sends a Boolean signal to its outflow rate element to tell it to stop demanding more stuff.
 </html>"));
     end CLevel1b;
@@ -895,7 +895,7 @@ This is the general continuous <b>Level</b> model of the System Dynamics methodo
     end Level3;
   end Levels;
   package Rates "Rates of the System Dynamics methodology"
-    extends Modelica.Icons.Library annotation(preferedView = "info", Documentation(info = "<html>
+    extends Modelica.Icons.Package annotation(preferedView = "info", Documentation(info = "<html>
 This package contains a set of different <b>Rates</b> (state derivative variables) frequently used in the System Dynamics methodology.
 </html>"));
     block Rate_1 "Unrestricted rate element with one influencing variable"
@@ -927,7 +927,7 @@ This is the general System Dynamics unrestricted <b>Rate</b> element, whereby th
       connect(y1,Limiter1.y) annotation(Line(points = {{50.0,0.0},{0.0,0.0},{0.0,-39.0}}, color = {95,0,191}, visible = true));
       annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Polygon(visible = true, lineColor = {127,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, lineThickness = 0.5, points = {{-60.0,-100.0},{-60.0,-40.0},{40.0,26.0},{-40.0,26.0},{60.0,-40.0},{60.0,-100.0},{-60.0,-100.0}}),Line(visible = true, points = {{-40.0,0.0},{40.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,50.0},{100.0,88.0}}, textString = "%name", fontName = "Arial"),Line(visible = true, points = {{-40.0,-74.0},{-12.0,-74.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{8.0,-46.0},{36.0,-46.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{-12.0,-74.0},{8.0,-46.0}}, color = {0,0,255}, thickness = 0.5)}), Documentation(info = "<html>
 This is the System Dynamics restricted <b>Rate</b> element, whereby the rate itself is determined by a single variable in its laundry list.  The indicated direction of mass flow denotes the direction of true mass flow.  If the control signal of the rate assumes a negative value, no mass will flow.  If the control signal of the rate assumes a too large positive value, the mass flow will be limited to its allowed maximum value. <p>
- 
+
 The restricted rate element should e.g. be used to model a kitchen faucet.  The valve can be opened or closed, but there is a limit to how much water per time unit you can get out of the faucet, and no manipulation of the faucet will ever make water flow from the sink back into the faucet.
 </html>"), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics));
     end RRate;
@@ -953,7 +953,7 @@ The restricted rate element should e.g. be used to model a kitchen faucet.  The 
       connect(Switch1.u3,Const1.y) annotation(Line(points = {{8.0,-72.0},{8.0,-80.0},{20.0,-80.0},{20.0,-50.0},{29.0,-50.0}}, color = {0,0,191}, visible = true));
       annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Polygon(visible = true, lineColor = {127,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, lineThickness = 0.5, points = {{-60.0,-100.0},{-60.0,-40.0},{40.0,26.0},{-40.0,26.0},{60.0,-40.0},{60.0,-100.0},{-60.0,-100.0}}),Line(visible = true, points = {{-40.0,0.0},{40.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,50.0},{100.0,88.0}}, textString = "%name", fontName = "Arial"),Line(visible = true, points = {{-40.0,-74.0},{-12.0,-74.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{8.0,-46.0},{36.0,-46.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{-12.0,-74.0},{8.0,-46.0}}, color = {0,0,255}, thickness = 0.5)}), Documentation(info = "<html>
 This is the System Dynamics controlled restricted <b>Inflow</b> element, whereby the rate itself is determined by a single variable in its laundry list.  This element is a restricted rate element with the additional feature that the downstream level can control the flow by telling it that it is full.  This is accomplished by a Boolean control signal from the downstream level to the rate element. <p>
- 
+
 The controlled inflow element should e.g. be used to model the access to a parking garage.  Additional cars are only admitted as long as the garage is not full.
 </html>"), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics));
     end CInflow;
@@ -979,7 +979,7 @@ The controlled inflow element should e.g. be used to model the access to a parki
       connect(Const1.y,Switch1.u3) annotation(Line(points = {{-29.0,-50.0},{-20.0,-50.0},{-20.0,-80.0},{-8.0,-80.0},{-8.0,-72.0}}, color = {0,0,191}, visible = true));
       annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Polygon(visible = true, lineColor = {127,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, lineThickness = 0.5, points = {{-60.0,-100.0},{-60.0,-40.0},{40.0,26.0},{-40.0,26.0},{60.0,-40.0},{60.0,-100.0},{-60.0,-100.0}}),Line(visible = true, points = {{-40.0,0.0},{40.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,50.0},{100.0,88.0}}, textString = "%name", fontName = "Arial"),Line(visible = true, points = {{-40.0,-74.0},{-12.0,-74.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{8.0,-46.0},{36.0,-46.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{-12.0,-74.0},{8.0,-46.0}}, color = {0,0,255}, thickness = 0.5)}), Documentation(info = "<html>
 This is the System Dynamics controlled restricted <b>Outflow</b> element, whereby the rate itself is determined by a single variable in its laundry list.  This element is a restricted rate element with the additional feature that the upstream level can control the flow by telling it that it is empty.  This is accomplished by a Boolean control signal from the upstream level to the rate element. <p>
- 
+
 The controlled outflow element should e.g. be used to model the drainage of a kitchen sink.  Water can flow out of the kitchen sink only as long as there is any water left.
 </html>"), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics));
     end COutflow;
@@ -1009,7 +1009,7 @@ The controlled outflow element should e.g. be used to model the drainage of a ki
       connect(s2,and1.u2) annotation(Line(points = {{65.0,-70.0},{50.0,-70.0},{50.0,-20.0},{70.0,-20.0},{70.0,20.0},{-80.0,20.0},{-80.0,-78.0},{-52.0,-78.0}}, color = {255,0,255}, visible = true));
       annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Polygon(visible = true, lineColor = {127,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, lineThickness = 0.5, points = {{-60.0,-100.0},{-60.0,-40.0},{40.0,26.0},{-40.0,26.0},{60.0,-40.0},{60.0,-100.0},{-60.0,-100.0}}),Line(visible = true, points = {{-40.0,0.0},{40.0,0.0}}, color = {127,0,255}, thickness = 0.5),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,50.0},{100.0,88.0}}, textString = "%name", fontName = "Arial"),Line(visible = true, points = {{-40.0,-74.0},{-12.0,-74.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{8.0,-46.0},{36.0,-46.0}}, color = {0,0,255}, thickness = 0.5),Line(visible = true, points = {{-12.0,-74.0},{8.0,-46.0}}, color = {0,0,255}, thickness = 0.5)}), Documentation(info = "<html>
 This is the System Dynamics controlled restricted <b>Rate</b> element, whereby the rate itself is determined by a single variable in its laundry list.  This element is a restricted rate element with the additional feature that the upstream level can control the flow by telling it that it is empty, and that the downstream level can control the flow by telling it that it is full.  This is accomplished by two Boolean control signals from the upstream and downstream levels to the rate element. <p>
- 
+
 The controlled rate element must be placed between two controlling levels.
 </html>"), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics));
     end CRate;
@@ -1179,7 +1179,7 @@ This is the general System Dynamics unrestricted multiplicative <b>Rate</b> elem
     end MRate_5;
   end Rates;
   package Sources "Sources and sinks of the System Dynamics methodology"
-    extends Modelica.Icons.Library;
+    extends Modelica.Icons.Package;
     block Source "This is the (dummy) source model of System Dynamics"
       SystemDynamics.Interfaces.MassInPort MassInPort1 "Outflow variable" annotation(Placement(visible = true, transformation(origin = {110.0,0.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0), iconTransformation(origin = {110.0,0.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-8.0},{8.0,80.0}}),Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-10.0,-10.0},{80.0,80.0}}),Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-80.0},{10.0,10.0}}),Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-10.0,-80.0},{80.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {191,127,255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-62.0,-64.0},{64.0,60.0}}),Line(visible = true, points = {{64.0,0.0},{110.0,0.0}}, color = {127,0,255}, thickness = 0.5)}), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-8.0},{8.0,80.0}}),Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-10.0,-10.0},{80.0,80.0}}),Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-80.0,-80.0},{10.0,10.0}}),Ellipse(visible = true, lineColor = {127,0,255}, fillColor = {191,127,255}, fillPattern = FillPattern.Solid, extent = {{-10.0,-80.0},{80.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {191,127,255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-62.0,-64.0},{64.0,60.0}}),Line(visible = true, points = {{64.0,0.0},{100.0,0.0}}, color = {127,0,255}, thickness = 0.5)}), Documentation(info = "<html>
@@ -1441,7 +1441,7 @@ This model describes the distribution network of produced goods.  Goods that are
         connect(SSR.y,IAR.u2) annotation(Line(visible = true, points = {{62.5,-30.0},{47.6,-30.0}}, color = {95,0,191}));
         annotation(Icon(coordinateSystem(extent = {{-125.0,-125.0},{125.0,125.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Text(visible = true, lineColor = {0,0,255}, extent = {{-0.0,65.0},{0.0,101.0}}, textString = "%name", fontName = "Arial"),Rectangle(visible = true, lineColor = {0,0,255}, extent = {{-100.0,-100.0},{100.0,100.0}}),Polygon(visible = true, lineColor = {0,0,255}, fillColor = {191,223,159}, fillPattern = FillPattern.Solid, points = {{-49.0,20.0},{-10.0,20.0},{10.0,10.0},{-34.0,10.0},{-34.0,-24.0},{0.0,-24.0},{0.0,-60.0},{-50.0,-60.0},{-50.0,20.0},{-49.0,20.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-22.0,-7.0},{-13.0,2.0}}),Polygon(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, points = {{-24.0,-24.0},{-11.0,-24.0},{-11.0,-11.0},{-18.0,-8.0},{-23.0,-11.0},{-23.0,-24.0},{-24.0,-24.0}}),Line(visible = true, points = {{-18.0,-12.0},{-9.0,-19.0},{-3.0,-16.0}}, color = {0,0,255}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {127,191,255}, fillPattern = FillPattern.Solid, extent = {{14.0,-15.0},{23.0,-6.0}}),Polygon(visible = true, lineColor = {0,0,255}, fillColor = {127,191,255}, fillPattern = FillPattern.Solid, points = {{14.0,-32.0},{25.0,-32.0},{25.0,-19.0},{18.0,-16.0},{13.0,-19.0},{13.0,-32.0},{14.0,-32.0}}),Line(visible = true, points = {{18.0,-20.0},{10.0,-24.0},{4.0,-20.0}}, color = {0,0,255}),Polygon(visible = true, lineColor = {0,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, points = {{13.0,-33.0},{25.0,-33.0},{25.0,-60.0},{21.0,-60.0},{18.0,-39.0},{12.0,-60.0},{9.0,-60.0},{13.0,-33.0},{13.0,-33.0}})}), Diagram(coordinateSystem(extent = {{-125.0,-125.0},{125.0,125.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{69.0,-51.0},{71.0,-49.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{96.0,79.0},{98.0,81.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{59.0,17.0},{61.0,19.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{59.0,9.0},{61.0,11.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{19.0,-6.0},{21.0,-4.0}})}), Documentation(info = "<html>
 This model describes the retail of produced goods.  Goods that are being sold are represented by the mass-flow model in the lower part of the graph, whereas the orders for these goods are represented by the mass-flow models in the upper part of the graph.  The signal-flow model represents the control of the flow of goods based on the information obtained from their order status. <p>
- 
+
 The retail model is the same model as the distribution model except for the parameter values used.
 </html>"));
       end Retail;
@@ -1475,17 +1475,17 @@ The retail model is the same model as the distribution model except for the para
         factoryStock = Factory1.IAF.y;
         annotation(Icon(coordinateSystem(extent = {{-50.0,-50.0},{50.0,50.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Text(visible = true, lineColor = {0,0,255}, extent = {{1.0,-52.0},{1.0,-39.0}}, textString = "%name", fontName = "Arial"),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-40.0,-40.0},{40.0,50.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,23.0},{30.0,38.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-2.0},{30.0,13.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-27.0},{30.0,-12.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,25.0},{27.0,35.0}}, textString = "Factory", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,1.0},{27.0,11.0}}, textString = "Distribution", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,-24.0},{27.0,-14.0}}, textString = "Retail", fontName = "Arial"),Line(visible = true, points = {{0.0,13.0},{0.0,23.0}}, color = {0,0,255}),Line(visible = true, points = {{0.0,-2.0},{0.0,-12.0}}, color = {0,0,255})}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Documentation(info = "<html>
 <b>Customer Demand Modeled as Noise</b> <p>
- 
+
 Customer demand usually fluctuates in a random fashion.  Therefore, it is modeled in this simulation as normally distributed random noise with a mean value of <b>mean=1000</b> and a standard deviation of <b>stdev=100</b>. The noise is sampled once per week and kept constant for the corresponding week.  The order flow is modeled using the equation:<p>
 <font color=red><b>RRR(t) = RRRini + normal(1000,100);</b></font> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 10 years (520 weeks), and plot on a single graph the incoming orders, the production flow in the factory, and the levels of goods in retail, distribution, and the factory as functions of time: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Inventory_1.png\"> <p>
- 
+
 Choose <font color=red><b>Radau-IIa</b></font> as your integration algorithm.  It handles noise input better than <font color=red><b>DASSL</b></font>. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""), experiment(StopTime = 520), experimentSetupOutput);
       end InventoryForresterNormalNoise;
@@ -1519,15 +1519,15 @@ Choose <font color=red><b>Radau-IIa</b></font> as your integration algorithm.  I
         factoryStock = Factory1.IAF.y;
         annotation(Icon(coordinateSystem(extent = {{-50.0,-50.0},{50.0,50.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Text(visible = true, lineColor = {0,0,255}, extent = {{1.0,-52.0},{1.0,-39.0}}, textString = "%name", fontName = "Arial"),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-40.0,-40.0},{40.0,50.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,23.0},{30.0,38.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-2.0},{30.0,13.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-27.0},{30.0,-12.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,25.0},{27.0,35.0}}, textString = "Factory", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,1.0},{27.0,11.0}}, textString = "Distribution", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,-24.0},{27.0,-14.0}}, textString = "Retail", fontName = "Arial"),Line(visible = true, points = {{0.0,13.0},{0.0,23.0}}, color = {0,0,255}),Line(visible = true, points = {{0.0,-2.0},{0.0,-12.0}}, color = {0,0,255})}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experiment(StopTime = 120, Algorithm = "dassl"), experimentSetupOutput, Documentation(info = "<html>
 <b>Seasonally Fluctuating Customer Demand</b> <p>
- 
+
 The second simulation involves seasonal fluctuation of customers:<p>
 <font color=red><b>RRR(t) = RRRini + 100*sin(2*pi*time/52);</b></font> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 120 weeks, and plot on one graph the incoming orders and the production flow in the factory and on a second graph the levels of goods in retail, distribution, and the factory as functions of time: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Inventory_2.png\"/> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end InventoryForresterSinOneYear;
@@ -1561,14 +1561,14 @@ Simulate the model across 120 weeks, and plot on one graph the incoming orders a
         factoryStock = Factory1.IAF.y;
         annotation(Icon(coordinateSystem(extent = {{-50.0,-50.0},{50.0,50.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Text(visible = true, lineColor = {0,0,255}, extent = {{1.0,-52.0},{1.0,-39.0}}, textString = "%name", fontName = "Arial"),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-40.0,-40.0},{40.0,50.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,23.0},{30.0,38.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-2.0},{30.0,13.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-27.0},{30.0,-12.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,25.0},{27.0,35.0}}, textString = "Factory", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,1.0},{27.0,11.0}}, textString = "Distribution", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,-24.0},{27.0,-14.0}}, textString = "Retail", fontName = "Arial"),Line(visible = true, points = {{0.0,13.0},{0.0,23.0}}, color = {0,0,255}),Line(visible = true, points = {{0.0,-2.0},{0.0,-12.0}}, color = {0,0,255})}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experiment(StopTime = 120, Algorithm = "dassl"), experimentSetupOutput, Documentation(info = "<html>
 <b>Seasonally Fluctuating Customer Demand</b> <p>
- 
+
 The third simulation involves seasonal fluctuation of customers with a capacity limit of 1200 items/week in the factory.  The customer demand remains always below the manufacturing capacity limit; nevertheless, the manufacturing site must operate at its capacity limit for certain time periods, while at other times, it runs at 20% of its capacity only. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 120 weeks, and plot on one graph the incoming orders and the production flow in the factory and on a second graph the levels of goods in retail, distribution, and the factory as functions of time: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Inventory_3.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end InventoryForresterSinOneYearCapacity;
@@ -1602,20 +1602,20 @@ Simulate the model across 120 weeks, and plot on one graph the incoming orders a
         factoryStock = Factory1.IAF.y;
         annotation(experiment(StopTime = 90, Algorithm = "dassl"), Icon(coordinateSystem(extent = {{-50.0,-50.0},{50.0,50.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Text(visible = true, lineColor = {0,0,255}, extent = {{1.0,-52.0},{1.0,-39.0}}, textString = "%name", fontName = "Arial"),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-40.0,-40.0},{40.0,50.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,23.0},{30.0,38.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-2.0},{30.0,13.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {127,255,0}, fillPattern = FillPattern.Solid, extent = {{-30.0,-27.0},{30.0,-12.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,25.0},{27.0,35.0}}, textString = "Factory", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,1.0},{27.0,11.0}}, textString = "Distribution", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-25.0,-24.0},{27.0,-14.0}}, textString = "Retail", fontName = "Arial"),Line(visible = true, points = {{0.0,13.0},{0.0,23.0}}, color = {0,0,255}),Line(visible = true, points = {{0.0,-2.0},{0.0,-12.0}}, color = {0,0,255})}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experimentSetupOutput, Documentation(info = "<html>
 <b>Customer Demand Step</b> <p>
- 
+
 The fourth simulation involves a step in the incoming orders: <p>
 <font color=red><b>RRR(t) = RRRini + if time > 10 then RRRoffset else 0;</b></font> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 90 weeks, and plot on one graph the incoming orders and the production flow in the factory and on a second graph the levels of goods in retail, distribution, and the factory as functions of time: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Inventory_4.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end InventoryForresterStep;
       package Utilities "Utility models of Forrester's inventory model"
-        extends Modelica.Icons.Library;
+        extends Modelica.Icons.Package;
         block DFD "Desired delay in filling orders"
           extends Interfaces.Nonlin_2;
           parameter Real DHD(unit = "wk") = 1 "Delay in handling";
@@ -1771,30 +1771,30 @@ Utility models of Forrester's inventory model.
       end Utilities;
       annotation(preferedView = "info", Documentation(info = "<html>
 In Forrester (1961), a factory-distribution-retail inventory system is discussed in depth, modeled with the System Dynamics notation. At the time, the models had to be constructed using textual representations (<font color=red><b>Dynamo</b></font>). This very system is re-implemented here graphically using the <font color=red><b>SystemDynamics</b></font> library of <font color=red><b>Modelica</b></font>, and the same simulations are carried out as are given in the book by Forrester. Effects of amplification, delays, and information feedback are demonstrated in the simulations. Among other things, it is shown, how small changes in retail sales can lead to large swings in factory production. <p>
- 
+
 The model is not introduced in detail at this place.  The interested reader is referred to Forrester (1961). Roughly, the system is divided into a retail, a distribution, and a factory part, each containing inventories for the goods (consumer goods, such as refrigerators, for example) and a corresponding logic for ordering or producing items to be sold to customers. The only input to the system is customer orders RRR (Requisitions Received at Retail), and the internal variables of the system (levels and rates) are to be investigated when customer demand fluctuates. <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Forrester, J.W. (1961), <a href=\"http://www.amazon.com/Forrester-Industrial-Dynamics-Jay-W/dp/0262060035\">Industrial Dynamics</a>, M.I.T. Press, 479p.
 </ol> <p>
- 
+
 <hr> <p>
 </html>"));
     end Inventory;
     annotation(preferedView = "info", Documentation(info = "<html>
 The oldest research area, where the System Dynamics methodology has been employed, is in the description of <font color=red><b>industrial dynamics</b></font>.  In fact, this is the application area for which the methodology had originally been developed by <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester</a>. <p>
- 
+
 This package is designed to contain examples of such <font color=red><b>industrial dynamics</b></font> models. <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Forrester, J.W. (1961), <a href=\"http://www.amazon.com/Forrester-Industrial-Dynamics-Jay-W/dp/0262060035\">Industrial Dynamics</a>, M.I.T. Press, 479p.
 <li> Hammer, M, and J. Champy (1994), <a href=\"http://www.amazon.com/Reengineering-Corporation-Manifesto-Business-Revolution/dp/0066621127\">Reengineering the Corporation: A Manifesto for Business Revolution</a>, Harper Business, New York, 257p.
 </ol> <p>
- 
+
 <hr> <p>
 </html>"));
   end IndustrialDynamics;
@@ -1803,16 +1803,16 @@ This package is designed to contain examples of such <font color=red><b>industri
     package LarchBudMoth "Model of larch bud moth population dynamics"
       extends Modelica.Icons.Example annotation(Documentation(info = "<html>
 The larch bud moth model describes the population dynamics of the larch bud moth insect in the upper Engiadina valley of Switzerland. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Fischlin, A. and W. Baltensweiler (1979), \"Systems Analysis of the Larch Bud Moth System.  Part I: The Larch - Larch Bud Moth Relationship,\" <i>Mitteilungen der Schweizerischen Entomologischen Gesellschaft</i>, <b>52</b>, pp.273-289.
 </ol> <p>
- 
+
 <hr> <p>
 </html>"), preferedView = "info");
       block Starvation "Starvation function"
@@ -1967,38 +1967,38 @@ Logarithmic transformation.
         LogDensityMeas = Logarithm2.y;
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{140.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {160,160,160}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{140.0,100.0}}),Text(visible = true, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-82.0,16.0},{124.0,76.0}}, textString = "Larch bud moth", fontName = "Arial"),Text(visible = true, origin = {-0.51,-14.0}, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-53.6054,-16.0},{100.51,8.0}}, textString = "dynamics of the larch bud moth", fontName = "Arial"),Text(visible = true, origin = {-9.8174,-11.9208}, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-60.1826,0.0},{124.664,30.0}}, textString = "The model describes the population", fontName = "Arial"),Text(visible = true, origin = {14.4661,-16.0}, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-21.1707,-34.0},{40.8293,-14.0}}, textString = "in Switzerland", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-240.0},{280.0,200.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{58.0,64.0},{62.0,68.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-137.0},{42.0,-133.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{44.0,-140.0},{48.0,-136.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{92.0,-132.0},{96.0,-128.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-52.0,-86.0},{-48.0,-82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-52.0,-193.0},{-48.0,-189.0}}),Text(visible = true, lineColor = {0,0,255}, fillColor = {128,128,128}, extent = {{12.0,92.0},{60.0,102.0}}, textString = "small Larvae", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {128,128,128}, extent = {{80.0,68.0},{128.0,78.0}}, textString = "large Larvae", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {128,128,128}, extent = {{126.0,124.0},{174.0,134.0}}, textString = "Insects", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {128,128,128}, extent = {{24.0,122.0},{72.0,132.0}}, textString = "Females", fontName = "Arial"),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{143.0,64.0},{147.0,68.0}})}), experiment(StartTime = 1949, StopTime = 1978), experimentSetupOutput, Documentation(info = "<html>
 The larch bud moth model describes the population dynamics of the larch bud moth insect in the upper Engiadina valley of Switzerland. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Fischlin, A. and W. Baltensweiler (1979), \"Systems Analysis of the Larch Bud Moth System.  Part I: The Larch - Larch Bud Moth Relationship,\" <i>Mitteilungen der Schweizerischen Entomologischen Gesellschaft</i>, <b>52</b>, pp.273-289.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 29 time units (years) and plot the simulated and the measured data together against the calendar years. <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/LarchBudMoth_1.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end LBM;
     end LarchBudMoth;
     annotation(preferedView = "info", Documentation(info = "<html>
 One research area, where the System Dynamics methodology has been used intensively and with much success, is in the description of the <font color=red><b>population dynamics</b></font> of interacting species. <p>
- 
+
 This package is designed to contain examples of such <font color=red><b>population dynamics</b></font> models. <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Odum, E.P. and G.W. Barrett (2004), <a href=\"http://www.amazon.com/Fundamentals-Ecology-Eugene-Odum/dp/0534420664\">Fundamentals of Ecology</a>, 5<sup>th</sup> Edition, Brooks Cole Publishing, 624 p.
 <li> Odum, E.P. (1997), <a href=\"http://www.amazon.com/Ecology-Bridge-Between-Science-Society/dp/0878936300\">Ecology: A Bridge between Science and Society</a>, 3<sup>rd</sup> Revised Edition, Sinauer Associates, 330 p.
 </ol> <p>
- 
+
 <hr> <p>
 </html>"));
   end PopulationDynamics;
@@ -2226,21 +2226,21 @@ This package is designed to contain examples of such <font color=red><b>populati
         Nat_res = Natural_Resources.y;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-262.0},{442.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,102.0},{296.0,170.0}}, textString = "Forrester's", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,-22.0},{296.0,46.0}}, textString = "Original", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,-100.0},{296.0,-32.0}}, textString = "World Model", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-62.0,6.0},{-58.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{98.0,192.0},{102.0,196.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,-16.0},{142.0,-12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-22.0},{2.0,-18.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-2.0},{-174.0,2.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{78.0,4.0},{82.0,8.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-97.0},{2.0,-93.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-68.0},{-174.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-68.0},{2.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{158.0,28.0},{162.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-262.0},{42.0,-258.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,-102.0},{302.0,-98.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,28.0},{302.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,78.0},{302.0,82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,169.0},{302.0,173.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{342.0,-171.0},{346.0,-167.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{354.0,-234.0},{358.0,-230.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-97.0,6.0},{-93.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-137.0,-22.0},{-133.0,-18.0}})}), Documentation(info = "<html>
 This is the original scenario of <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester's</a> <font color=red><b>WORLD2</b></font> model as described in his <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a> book. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 200 years, and plot the state variables as well as the quality of life as functions of the calendar years: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/SD_Fig1.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput);
       end Scenario_1;
@@ -2466,23 +2466,23 @@ Simulate the model across 200 years, and plot the state variables as well as the
         NR_norm.u2 = NRUN;
         annotation(Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-62.0,6.0},{-58.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{98.0,192.0},{102.0,196.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,-16.0},{142.0,-12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-22.0},{2.0,-18.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-2.0},{-174.0,2.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{78.0,4.0},{82.0,8.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-97.0},{2.0,-93.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-68.0},{-174.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-68.0},{2.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{158.0,28.0},{162.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-262.0},{42.0,-258.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,-102.0},{302.0,-98.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,28.0},{302.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,78.0},{302.0,82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,169.0},{302.0,173.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{342.0,-171.0},{346.0,-167.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{354.0,-234.0},{358.0,-230.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-97.0,6.0},{-93.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-137.0,-22.0},{-133.0,-18.0}})}), Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-260.0},{442.0,224.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-152.0,74.0},{368.0,144.0}}, textString = "1st Modification", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {127,0,255}, extent = {{-148.0,-22.0},{372.0,48.0}}, textString = "NRUN", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-102.0},{370.0,-32.0}}, textString = "reduced to 0.25", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-188.0},{370.0,-118.0}}, textString = "in 1970", fontName = "Arial")}), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is the first modification proposed by <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester</a> in his <font color=red><b>WORLD2</b></font> model. The utilization of natural resources is reduced in 1970 to 25% of their former value in order to extend their availability. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 200 years, and plot the state variables as well as the quality of life as functions of the calendar years: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/SD_Fig2.png\"> <p>
- 
+
 I had to artificially extend some of the tabular functions, because our software complains when an interpolation function attempts an extrapolation. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_2;
@@ -2710,21 +2710,21 @@ I had to artificially extend some of the tabular functions, because our software
         Pol_norm.u2 = POLN;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-264.0},{442.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-152.0,70.0},{368.0,140.0}}, textString = "2nd Modification", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {127,0,255}, extent = {{-148.0,-26.0},{372.0,44.0}}, textString = "POLN", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-106.0},{370.0,-36.0}}, textString = "reduced to 0.25", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-192.0},{370.0,-122.0}}, textString = "in 1970", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-62.0,6.0},{-58.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{98.0,192.0},{102.0,196.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,-16.0},{142.0,-12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-22.0},{2.0,-18.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-2.0},{-174.0,2.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{78.0,4.0},{82.0,8.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-97.0},{2.0,-93.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-68.0},{-174.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-68.0},{2.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{158.0,28.0},{162.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-262.0},{42.0,-258.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,-102.0},{302.0,-98.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,28.0},{302.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,78.0},{302.0,82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,169.0},{302.0,173.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{342.0,-171.0},{346.0,-167.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{354.0,-234.0},{358.0,-230.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-97.0,6.0},{-93.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-137.0,-22.0},{-133.0,-18.0}})}), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is the second modification proposed by <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester</a> in his <font color=red><b>WORLD2</b></font> model. The generation of pollution is reduced in 1970 to 25% of their former value in order to reduce the effect of pollution on climate and food production. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 200 years, and plot the state variables as well as the quality of life as functions of the calendar years: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/SD_Fig3.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_3;
@@ -2960,21 +2960,21 @@ Simulate the model across 200 years, and plot the state variables as well as the
         Pop_meas = Functions.Utilities.Piecewise(x = time, x_grid = time_vals, y_grid = pop_vals);
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-264.0},{442.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-152.0,70.0},{368.0,140.0}}, textString = "3rd Modification", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {127,0,255}, extent = {{-148.0,-26.0},{372.0,44.0}}, textString = "DRN", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-106.0},{370.0,-36.0}}, textString = "reduced to 0.2", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-192.0},{370.0,-122.0}}, textString = "in 1970", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-62.0,6.0},{-58.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{98.0,192.0},{102.0,196.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,-16.0},{142.0,-12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-22.0},{2.0,-18.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-2.0},{-174.0,2.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{78.0,4.0},{82.0,8.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-97.0},{2.0,-93.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-68.0},{-174.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-68.0},{2.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{158.0,28.0},{162.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-262.0},{42.0,-258.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,-102.0},{302.0,-98.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,28.0},{302.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,78.0},{302.0,82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,169.0},{302.0,173.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{342.0,-171.0},{346.0,-167.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{354.0,-234.0},{358.0,-230.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-97.0,6.0},{-93.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-137.0,-22.0},{-133.0,-18.0}})}), experiment(StartTime = 1900, StopTime = 2000), experimentSetupOutput, Documentation(info = "<html>
 This is a further modification of <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester's</a> <font color=red><b>WORLD2</b></font> model. The death rate is reduced in 1970 to better account for the recent advances in medicine. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 100 years, and plot the simulated and the measured world populations together on a single graph against the calendar years: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/SD_Fig4.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_4;
@@ -3220,25 +3220,25 @@ Simulate the model across 100 years, and plot the simulated and the measured wor
         der(years) = dir;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-264.0},{442.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-152.0,70.0},{368.0,140.0}}, textString = "4th Modification", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-148.0,-26.0},{372.0,44.0}}, textString = "Simulation", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-106.0},{370.0,-36.0}}, textString = "made", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-192.0},{370.0,-122.0}}, textString = "reversible in time", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-62.0,6.0},{-58.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{98.0,192.0},{102.0,196.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,-16.0},{142.0,-12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-22.0},{2.0,-18.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-2.0},{-174.0,2.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{78.0,4.0},{82.0,8.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-97.0},{2.0,-93.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-68.0},{-174.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-68.0},{2.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{158.0,28.0},{162.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-262.0},{42.0,-258.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,-102.0},{302.0,-98.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,28.0},{302.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,78.0},{302.0,82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,169.0},{302.0,173.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{342.0,-171.0},{346.0,-167.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{354.0,-234.0},{358.0,-230.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-97.0,6.0},{-93.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-137.0,-22.0},{-133.0,-18.0}})}), experiment(StopTime = 233, Tolerance = 0.0000000001), experimentSetupOutput, Documentation(info = "<html>
 This is yet another modification of <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester's</a> <font color=red><b>WORLD2</b></font> model. We wish to introduce time reversal to the simulation.  To this end, we replace the regular continuous levels of the System Dynamics methodology by reversible levels. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 233 years with time reversal starting at year 200, i.e., we simulate the world model forward through time from the year 1900 until the year 2100, and then backward through time from the year 2100 until the year 2067.  For this experiment, you need to set the simulation accuracy to 1e-10. <p>
- 
+
 Plot the simulated world population against the calendar years. <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/SD_Fig5.png\"> <p>
- 
+
 You shall notice that time reversal in the world model is numerically problematic.  The simulation is numerically unstable in backward direction.  The time-reversed model simulates correctly for a few years, but as numerical errors get the trajectory away from its designed path, the backward trajectory starts diverging quickly from the forward trajectory. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_5;
@@ -3472,40 +3472,40 @@ You shall notice that time reversal in the world model is numerically problemati
         when sample(100, 1) then
                   min_dPop = min([pre(min_dPop),rel_dPop]);
           min_QL = min([pre(min_QL),Quality_of_Life.y]);
-        
+
         end when;
         Perf_Index = min_QL + 5 * min_dPop / dPop_fact;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-264.0},{442.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-152.0,70.0},{368.0,140.0}}, textString = "5th Modification", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-148.0,-26.0},{372.0,44.0}}, textString = "Optimization", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-106.0},{370.0,-36.0}}, textString = "of use of", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, extent = {{-150.0,-192.0},{370.0,-122.0}}, textString = "natural resources", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-62.0,6.0},{-58.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{98.0,192.0},{102.0,196.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,-16.0},{142.0,-12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-22.0},{2.0,-18.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-2.0},{-174.0,2.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{78.0,4.0},{82.0,8.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-97.0},{2.0,-93.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-178.0,-68.0},{-174.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-2.0,-68.0},{2.0,-64.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{158.0,28.0},{162.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{38.0,-262.0},{42.0,-258.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,-102.0},{302.0,-98.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,28.0},{302.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,78.0},{302.0,82.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{298.0,169.0},{302.0,173.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{342.0,-171.0},{346.0,-167.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{354.0,-234.0},{358.0,-230.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-97.0,6.0},{-93.0,10.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-137.0,-22.0},{-133.0,-18.0}})}), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 The 6<sup>th</sup> scenario starts out from the 2<sup>nd</sup> scenario.  We now wish to vary the resource utilization rate after the year 1970. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model six times across 200 years while keeping all six trajectories (plot setup menu).  For the six simulation runs, choose different levels of resource utilization after the year 1970: <br>
 <font color=red><b>NRUN2 = {0.25, 0.5, 0.75, 1.0, 1.25, 1.5}</b></font>. <p>
- 
+
 Compute a performance index: <br>
 <font color=red><b>Perf_Index = min_QL + 5*min_dPop;</b></font> <br>
 where <b>min_QL</b> is the minimal quality of life observed between 2000 and 2100, and <b>min_dPop</b> is the largest negative population gradient observed in the same time period. <p>
- 
+
 Plot the performance index across the calendar years between 2000 and 2100 for all six scenarios on a single graph: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/SD_Fig6.png\"> <p>
- 
+
 <b>NRUN2 = 0.25</b> and <b>NRUN2 = 0.5</b> lead to massive die-off, whereas the other scenarios avoid this problem.  However in the short run, those scenarios that offer the worst long-term performance are characterized by the best short-term performance.  This is the predicament that humanity is currently facing. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_6;
       package Utilities "Utility models of Forrester's WORLD2 model"
-        extends Modelica.Icons.Library;
+        extends Modelica.Icons.Package;
         block Parameter_Change "Parameter variation of WORLD2 model"
           extends Interfaces.Nonlin_2;
         equation
@@ -3517,9 +3517,9 @@ Utility models of Forrester's <font color=red><b>WORLD2</b></font> model.
       end Utilities;
       annotation(preferedView = "info", Documentation(info = "<html>
 This model implements <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester's</a> <font color=red><b>WORLD2</b></font> model as described in his 1971 book on <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>.  <p>
- 
+
 It is a very simply model that contains only five state variables: <br>
- 
+
 <ol>
 <li>total human population,
 <li>total persistent pollution,
@@ -3527,24 +3527,24 @@ It is a very simply model that contains only five state variables: <br>
 <li>total capital investment, and
 <li>fraction of capital investment allocated to the agricultural sector.
 </ol> <p>
- 
+
 The aim of the model is to demonstrate, in very simple terms, that physical systems remain always constrained.  The production of goods (especially food) on this globe is limited by the available resources, and energy constraints will prevent production to grow indefinitely. <p>
- 
+
 While these are very simple facts, it is useful to investigate, when our globe will reach its limits.  Forrester showed that this will inevitably happen during the first half of the 21st century.  After that, humanity will invariably have to learn to transform itself from a society of (seemingly perpetual) exponential growth to one of (truly perpetual) stagnation, at least as long as humanity limits itself to the resources available on this one planet. <p>
- 
+
 Forrester listed his entire model in his book, which made it easy for other researcher to reproduce his results.  Many people have done so using a variety of different tools.  Whereas the original model had been coded in <font color=red><b>Dynamo</b></font>, a rather clumsy and old-fashioned alphanumerical M&S environment, the most popular tool for coding System Dynamics models today is <font color=red><b>STELLA</b></font>. <p>
- 
+
 In this library, we offer a <font color=red><b>Modelica</b></font> implementation of Forrester's <font color=red><b>WORLD2</b></font> model. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
 </ol> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "WORLD2"),Text(lineColor = {0,0,255}, extent = {{-73.9,25.05},{72,-18}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "world model as proposed"),Text(lineColor = {0,0,255}, extent = {{-65.8,38.1},{64,12}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "describes the original"),Text(lineColor = {0,0,255}, extent = {{-77.7,-14.85},{82,-64}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "his book World Dynamics."),Text(lineColor = {0,0,255}, extent = {{-61.6,-4.8},{56,-31}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "by Jay Forrester in")}));
     end World2;
@@ -3630,7 +3630,7 @@ In this library, we offer a <font color=red><b>Modelica</b></font> implementatio
         connect(tot_agric_invest,Land_Dev_Rt.u3) annotation(Line(visible = true, points = {{-210.0,-10.0},{-170.0,-10.0},{-170.0,-50.0},{-60.0,-50.0},{-60.0,-70.0},{-21.0,-70.0},{-21.0,-47.0}}, color = {0,0,191}));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,50.0}, fillPattern = FillPattern.Solid, extent = {{-73.6862,-36.6918},{73.6862,36.6918}}, textString = "Arable", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-50.0}, fillPattern = FillPattern.Solid, extent = {{-87.9194,-20.8986},{87.9194,20.8986}}, textString = "Dynamics", fontSize = 102.0, fontName = "Arial"),Text(visible = true, fillPattern = FillPattern.Solid, extent = {{-72.1931,-36.6918},{72.1931,36.6918}}, textString = "Land", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-47.0,79.0},{-45.0,81.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-131.0,-91.0},{-129.0,-89.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-187.0,109.0},{-185.0,111.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{99.0,77.0},{101.0,79.0}})}), Documentation(info = "<html>
 This model quantifies the land that is being used to produce food, i.e., the arable land.  The model contains three state variables, representing the potential arable land, i.e., land that could be developed to grow crop, but so far hasn't been developed; the arable land that is currently being used for agriculture; and finally, the land that is being used for urban development and industry (including mining).  Some of the potential arable land is getting developed over time, whereas some of the arable land is being lost either to urban development or to erosion. <p>
- 
+
 The arable land is measured in units of hectares.
 </html>"));
       end Arable_Land_Dynamics;
@@ -3752,9 +3752,9 @@ The arable land is measured in units of hectares.
         connect(Tot_Agric_Invest.y,tot_agric_invest) annotation(Line(points = {{120.0,-101.6},{120.0,-64.0},{194.0,-64.0},{194.0,136.0},{170.0,136.0},{170.0,150.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,30.0}, fillPattern = FillPattern.Solid, extent = {{-47.3724,-36.6918},{47.3724,36.6918}}, textString = "Food", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-95.13,-24.9532},{95.13,24.9532}}, textString = "Production", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-181.0,-91.0},{-179.0,-89.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-11.0,-105.0},{-9.0,-103.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-11.0,19.0},{-9.0,21.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-41.0,-51.0},{-39.0,-49.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{89.0,-5.0},{91.0,-3.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-181.0,49.0},{-179.0,51.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-111.0,93.0},{-109.0,95.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{179.0,49.0},{181.0,51.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{129.0,29.0},{131.0,31.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-61.0,110.0},{-59.0,112.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{99.0,-111.0},{101.0,-109.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-81.0,49.0},{-79.0,51.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{89.0,49.0},{91.0,51.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{119.0,-65.0},{121.0,-63.0}})}), Documentation(info = "<html>
 This model describes the production of food.  Food is a controlled variable, as farmers decide what to grow and how much to grow on the basis of their perception of what they can sell.  Consequently, the model uses the perceived food ratio as a state variable.  If the farmers decide that too much food is being produced already, they'll produce less next year, and vice versa. <p>
- 
+
 A second state variable describes the capital that is being invested in growing food.  Since that capital (for example, the capital expended in buying food harvesting machines) cannot be allocated or freed instantaneously, it makes sense to maintain also that variable as a state variable. <p>
- 
+
 The agricultural input is measured in dollars/year, whereas the food ratio is dimensionless.
 </html>"));
       end Food_Production;
@@ -3779,7 +3779,7 @@ The agricultural input is measured in dollars/year, whereas the food ratio is di
         connect(HEF_Human_Ecological_Footprint.y,hef_human_ecological_footprint) annotation(Line(points = {{-40.5,0.0},{40.5,0.0}}, color = {0,0,191}, visible = true, origin = {69.5,0.0}));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,50.0}, fillPattern = FillPattern.Solid, extent = {{-78.6862,-24.4985},{78.6862,24.4985}}, textString = "Human", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {1.7338,-49.1014}, fillPattern = FillPattern.Solid, extent = {{-96.4561,-20.8986},{96.4561,20.8986}}, textString = "Footprint", fontSize = 102.0, fontName = "Arial"),Text(visible = true, fillPattern = FillPattern.Solid, extent = {{-88.0175,-25.4584},{88.0175,25.4584}}, textString = "Ecological", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Documentation(info = "<html>
 The <a href=\"http://www.footprintnetwork.org/gfn_sub.php?content=footprint_overview\">ecological footprint</a> is a concept developed by <a href=\"http://www.footprintnetwork.org/gfn_sub.php?content=whoweare\">Mathis Wackernagel</a> and his co-workers.  It attempts to quantify the percentage of the planet's carrying capacity being used up by humanity at any given point in time. Wackernagel showed that, since the 1980s, humanity is spending more resources per time unit than the planet can regenerate in a sustainable fashion. <p>
- 
+
 The human ecological footprint is measured in hectares per person.
 </html>"));
       end Human_Ecological_Footprint;
@@ -3843,7 +3843,7 @@ The human ecological footprint is measured in hectares per person.
         connect(Fert_Cont_Al_PC.u1,serv_out_pc) annotation(Line(visible = true, origin = {-178.5,60.0}, points = {{31.5,0.0},{-31.5,0.0}}, color = {0,0,191}));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {-0.0,30.0}, fillPattern = FillPattern.Solid, extent = {{-65.7919,-36.6918},{65.7919,36.6918}}, textString = "Human", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-65.0807,-36.6918},{65.0807,36.6918}}, textString = "Fertility", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-151.0,-81.0},{-149.0,-79.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-151.0,-11.0},{-149.0,-9.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{9.0,19.0},{11.0,21.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{9.0,-31.0},{11.0,-29.0}})}), Documentation(info = "<html>
 This model estimates the human fertility factor used by the population dynamics model. <p>
- 
+
 The human fertility factor is dimensionless.
 </html>"), experiment(StopTime = 200), experimentSetupOutput);
       end Human_Fertility;
@@ -3867,7 +3867,7 @@ The human fertility factor is dimensionless.
         connect(HWI_Human_Welfare_Index.y,hwi_human_welfare_index) annotation(Line(points = {{80.5,-10.0},{210.0,-10.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,50.0}, fillPattern = FillPattern.Solid, extent = {{-63.6862,-26.9167},{63.6862,26.9167}}, textString = "Human", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-50.0}, fillPattern = FillPattern.Solid, extent = {{-62.9121,-20.8986},{62.9121,20.8986}}, textString = "Index", fontSize = 102.0, fontName = "Arial"),Text(visible = true, fillPattern = FillPattern.Solid, extent = {{-62.5202,-26.0486},{62.5202,26.0486}}, textString = "Welfare", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-91.0,-81.0},{-89.0,-79.0}})}), Documentation(info = "<html>
 The <a href=\"http://links.jstor.org/sici?sici=0004-5608(198812)78%3A4%3C580%3AWVIHWA%3E2.0.CO%3B2-A\">human welfare index</a> is a measure of how well humans are living on average.  It is similar in concept to the <b>quality of life</b> variable introduced by Forrester in his <font color=red><b>WORLD2</b></font> model.  Yet, the human welfare index has been better standardized, and therefore, has replaced the former <b>quality of life</b> variable in the enhanced <font color=red><b>WORLD3</b></font> model. <p>
- 
+
 The human welfare index is dimensionless.
 </html>"));
       end Human_Welfare_Index;
@@ -3950,9 +3950,9 @@ The human welfare index is dimensionless.
         connect(Ind_Out_PC.y,ind_out_pc) annotation(Line(points = {{59.0,-130.0},{52.0,-130.0},{52.0,-160.0},{160.0,-160.0},{160.0,-70.0},{210.0,-70.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,30.0}, fillPattern = FillPattern.Solid, extent = {{-86.8431,-36.6918},{86.8431,36.6918}}, textString = "Industrial", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {-0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-92.5404,-36.6918},{92.5404,36.6918}}, textString = "Investment", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-101.0,19.0},{-99.0,21.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{89.0,19.0},{91.0,21.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{51.0,-131.0},{53.0,-129.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-121.0,-111.0},{-119.0,-109.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-101.0,-51.0},{-99.0,-49.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{89.0,-137.0},{91.0,-135.0}})}), Documentation(info = "<html>
 This model calculates the capital invested in industry. <p>
- 
+
 Whereas the earlier <font color=red><b>WORLD2</b></font> model lumped all capital investment into a single state variable from which it then split off the percentage of capital invested in the agricultural sector as a second state variable (a funny choice for a state variable, since percentages don't accumulate), the more modern <font color=red><b>WORLD3</b></font> model differentiates between capital invested in industry, capital invested in the service sector, capital invested in agriculture, and other capital investment. <p>
- 
+
 The industrial capital is measured in U.S. dollars.
 </html>"));
       end Industrial_Investment;
@@ -4004,7 +4004,7 @@ The industrial capital is measured in U.S. dollars.
         connect(capital_util_fr,Capital_Util_Fr.y) annotation(Line(points = {{111.575,0.0},{90.0,0.0},{87.3125,0.0},{68.225,0.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,30.0}, fillPattern = FillPattern.Solid, extent = {{-47.3724,-36.6918},{47.3724,36.6918}}, textString = "Labor", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-95.4145,-36.6918},{95.4145,36.6918}}, textString = "Utilization", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Documentation(info = "<html>
 This model computes the available labor work force that is available to be employed by agriculture, industry, and in the service sector. <p>
- 
+
 The labor utilization fraction is dimensionless.
 </html>"));
       end Labor_Utilization;
@@ -4061,9 +4061,9 @@ The labor utilization fraction is dimensionless.
         connect(Land_Fert_Degr_Rt.u,ppoll_index) annotation(Line(points = {{43.9556,-90.0},{-90.0,-90.0},{-90.0,-50.0},{-110.0,-50.0}}, color = {0,0,191}, visible = true));
         annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,30.0}, fillPattern = FillPattern.Solid, extent = {{-47.3724,-36.6918},{47.3724,36.6918}}, textString = "Land", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-65.0807,-36.6918},{65.0807,36.6918}}, textString = "Fertility", fontSize = 102.0, fontName = "Arial")}), Documentation(info = "<html>
 This model computes the land fertility as a function of its utilization.  Land can be overused.  If that happens, the fertility of the land shrinks.  This is likely to happen as the overall world population continues to climb. <p>
- 
+
 The land fertility is measured in kilograms of equivalent vegetable food per hectare and year.  Arable land can be used to either grow vegetable food directly, or alternatively, to raise animals that then enter the human food chain.  Yet it takes more land per human to raise animals than to grow vegetable food.  For this reason, it is meaningful to convert proteins obtained from eating meat to equivalent units of vegetable food. <p>
- 
+
 Notice that this model uses two different types of rate models.  Whereas the yield technology rate is a so-called bi-flow, i.e., it can assume both positive and negative values leading to a change of flow direction, the land fertility integrator uses uni-flows, i.e., flows that are allowed to flow in the indicated direction only.
 </html>", revisions = ""));
       end Land_Fertility;
@@ -4112,9 +4112,9 @@ Notice that this model uses two different types of rate models.  Whereas the yie
         connect(Hlth_Serv_Al_PC.u,serv_out_pc) annotation(Line(visible = true, points = {{-122.0,80.0},{-180.0,80.0},{-180.0,110.0},{-210.0,110.0}}, color = {0,0,191}));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,30.0}, fillPattern = FillPattern.Solid, extent = {{-47.3724,-36.6918},{47.3724,36.6918}}, textString = "Life", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {-0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-95.2722,-36.6918},{95.2722,36.6918}}, textString = "Expectancy", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-31.0,79.0},{-29.0,81.0}})}), Documentation(info = "<html>
 This model computes the average life expectancy of the human inhabitants of this planet as a function of their living conditions. <p>
- 
+
 The life expectancy is measured in numbers of years. <p>
- 
+
 This model is described on p.61 of <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>.
 </html>"));
       end Life_Expectancy;
@@ -4185,17 +4185,17 @@ This model is described on p.61 of <a href=\"http://www.pegasuscom.com/BookDetai
         connect(S_Fr_Cap_Al_Obt_Res.y,s_fr_cap_al_obt_res) annotation(Line(visible = true, points = {{-168.0,100.0},{-190.0,100.0},{-190.0,-150.0},{180.0,-150.0},{180.0,-70.0},{210.0,-70.0}}, color = {0,0,191}));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.0,50.0}, fillPattern = FillPattern.Solid, extent = {{-47.3724,-36.6918},{47.3724,36.6918}}, textString = "NR", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {-0.0,-49.1014}, fillPattern = FillPattern.Solid, extent = {{-88.3557,-20.8986},{88.3557,20.8986}}, textString = "Utilization", fontSize = 102.0, fontName = "Arial"),Text(visible = true, fillPattern = FillPattern.Solid, extent = {{-78.7713,-36.6918},{78.7713,36.6918}}, textString = "Resource", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{99.0,79.0},{101.0,81.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{79.0,59.0},{81.0,61.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-51.0,99.0},{-49.0,101.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{99.0,-11.0},{101.0,-9.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{104.0,-131.0},{106.0,-129.0}})}), Documentation(info = "<html>
 This model describes the utilization of non-recoverable natural resources.  In the model (created in the early 1970s), the non-recoverable resources considered are mostly metals.  They are thus measured in metric tons. <p>
- 
+
 From today's perspective, it might make more sense to concentrate on the remaining fossil fuels, which is not the approach that Meadows and his coworkers took.  Yet, the effects of the dwindling resources on the overall economy are comparable, whether we can no longer produce goods, because we lack the raw materials or because we lack the energy to do so, results ultimately in the same predicament.  Due to the laws of exponential growth, we are running out of all kind of natural resources (fossil fuels, minerals, fresh water) almost simultaneously. <p>
- 
+
 In the case of minerals, recovery is partly possible, as discarded materials can be recycled.  However doing so requires energy for the re-concentration of these scrap materials.  The materials themselves don't get used up.  They only get dissipated further and further, until their density is so low that they cannot be collected any longer within reasonable cost limits. <p>
- 
+
 In the case of fossil fuels, these truly get used up.  These resources are non-recoverable within human time constants.  They were developed over many millions of years and essentially represent \"fossil sunshine.\"  Humanity is using all of these resources up within the very short time span (in geological terms) of a few hundred years.  <font color=red><b>Peak Oil</b></font>, i.e., the time when we shall have used up 50% of the available oil, and when supply can no longer keep up with demand, is now just around the corner. <p>
- 
+
 The fantastic recent developments of technology and the medical sciences, accompanied by an unprecedented growth of human population, would not have been possible without these resources, and won't be maintainable, once they shall have been used up. <p>
- 
+
 Whereas the earlier <font color=red><b>WORLD2</b></font> model only accounted for the dwindling resources themselves, the newer <font color=red><b>WORLD3</b></font> model offers a second state variable representing technological change.  Through more advanced technology, it is possible to use the available resources more efficiently, and that effect is accounted for by the second state variable in the model. <p>
- 
+
 In the <font color=red><b>WORLD3</b></font> model, the natural resources themselves are measured in metric tons, whereas the technology change has no units.
 </html>", revisions = ""));
       end NR_Resource_Utilization;
@@ -4299,9 +4299,9 @@ In the <font color=red><b>WORLD3</b></font> model, the natural resources themsel
         connect(Poll_Intens_Ind.y,poll_intens_ind) annotation(Line(points = {{-150.0,76.6993},{-150.0,140.0},{190.0,140.0},{190.0,110.0},{210.0,110.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.2251,30.0}, fillPattern = FillPattern.Solid, extent = {{-69.7749,-36.6918},{69.7749,36.6918}}, textString = "Pollution", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {-0.3752,-30.0}, fillPattern = FillPattern.Solid, extent = {{-79.6248,-36.6918},{79.6248,36.6918}}, textString = "Dynamics", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-11.0,-113.0},{-9.0,-111.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-127.0,89.0},{-125.0,91.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-71.0,-81.0},{-69.0,-79.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{71.0,11.0},{73.0,13.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-135.0,-81.0},{-133.0,-79.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-127.0,-11.0},{-125.0,-9.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-185.0,-11.0},{-183.0,-9.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{75.0,-91.0},{77.0,-89.0}})}), Documentation(info = "<html>
 This model describes the appearance of persistent pollutants.  These pollutants are an unwelcome yet inevitable byproduct of our industrial production.  Especially air pollution is problematic, because these pollutants are difficult to re-capture, and they remain in the air for a long time, somewhere in the order of 100 years.  These then lead to <font color=red><b>Global Warming</b></font>. <p>
- 
+
 Whereas the earlier <font color=red><b>WORLD2</b></font> model listed only the appearance and assimilation of pollution itself, the newer <font color=red><b>WORLD3</b></font> model accounts for the possibility of reducing the release of pollutants into the air by improved technology using a second state variable.  For example, it may be possible to burn coal in a power plant that captures the released CO<sub>2</sub> rather than releasing it into the atmosphere.  In this way, the greenhouse gas emissions could be significantly reduced, and thereby, the effects of global warming could be mitigated. <p>
- 
+
 Pollutants can take many forms.  For this reason, the <font color=red><b>WORLD3</b></font> model normalizes the pollutants and expresses them in \"units of pollution.\"  In accordance with engineering practice, normalized quantities are assumed to be dimensionless (the dimensions are filtered out in the process of normalization), and consequently, pollution in this model is assumed dimensionless.  The technology change factor is also dimensionless.
 </html>"));
       end Pollution_Dynamics;
@@ -4425,9 +4425,9 @@ Pollutants can take many forms.  For this reason, the <font color=red><b>WORLD3<
         connect(Population.y,population) annotation(Line(points = {{-101.0,94.0},{-94.0,94.0},{-94.0,74.0},{120.0,74.0},{120.0,60.0},{210.0,60.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {-0.5365,30.0}, fillPattern = FillPattern.Solid, extent = {{-89.4635,-36.6918},{89.4635,36.6918}}, textString = "Population", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {0.0,-30.0}, fillPattern = FillPattern.Solid, extent = {{-81.6353,-36.6918},{81.6353,36.6918}}, textString = "Dynamics", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-71.0,-105.0},{-69.0,-103.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-1.0,-105.0},{1.0,-103.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{69.0,-105.0},{71.0,-103.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-71.0,-141.0},{-69.0,-139.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-1.0,-141.0},{1.0,-139.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{69.0,-141.0},{71.0,-139.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{29.0,-61.0},{31.0,-59.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-41.0,-61.0},{-39.0,-59.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-111.0,-61.0},{-109.0,-59.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{131.0,-5.0},{133.0,-3.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{13.0,27.0},{15.0,29.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-57.0,23.0},{-55.0,25.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-141.0,-17.0},{-139.0,-15.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-95.0,93.0},{-93.0,95.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{91.0,93.0},{93.0,95.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{85.0,73.0},{87.0,75.0}})}), Documentation(info = "<html>
 This model describes the population dynamics of the <font color=red><b>WORLD3</b></font> model.  Whereas the earlier <font color=red><b>WORLD2</b></font> model had lumped all of the population together into a single state variable, <font color=red><b>WORLD3</b></font> offers a demographic model that distinguishes between four age groups, those of the children, those of the younger adults representing the child-bearing population, those of the older adults who are still in the work force, and finally, those of the retired population. <p>
- 
+
 Population is measured in numbers of living humans.  In accordance with engineering practice, which (arbitrarily) assigns measurement units only to real-valued quantities and not to integer-valued quantities, this model lists the population as dimensionless. <p>
- 
+
 This model is described on p.142 of <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>.
 </html>"));
       end Population_Dynamics;
@@ -4494,9 +4494,9 @@ This model is described on p.142 of <a href=\"http://www.pegasuscom.com/BookDeta
         connect(Serv_Cap_Inv.u1,industrial_output) annotation(Line(points = {{-128.4,-10.0},{-180.0,-10.0},{-180.0,-70.0},{-210.0,-70.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {170,255,170}, fillPattern = FillPattern.Solid, lineThickness = 1.0, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 0.5),Text(visible = true, origin = {0.1825,50.0}, fillPattern = FillPattern.Solid, extent = {{-59.8175,-36.6918},{59.8175,36.6918}}, textString = "Service", fontSize = 102.0, fontName = "Arial"),Text(visible = true, origin = {-0.0,-50.0}, fillPattern = FillPattern.Solid, extent = {{-95.1836,-20.8986},{95.1836,20.8986}}, textString = "Investment", fontSize = 102.0, fontName = "Arial"),Text(visible = true, fillPattern = FillPattern.Solid, extent = {{-62.5202,-36.6918},{62.5202,36.6918}}, textString = "Sector", fontSize = 102.0, fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-200.0,-160.0},{200.0,140.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-11.0,-81.0},{-9.0,-79.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{159.0,-121.0},{161.0,-119.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{79.0,119.0},{81.0,121.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{-131.0,-81.0},{-129.0,-79.0}})}), Documentation(info = "<html>
 This model calculates the capital invested in the service sector. <p>
- 
+
 Whereas the earlier <font color=red><b>WORLD2</b></font> model lumped all capital investment into a single state variable from which it then split off the percentage of capital invested in the agricultural sector as a second state variable (a funny choice for a state variable, since percentages don't accumulate), the more modern <font color=red><b>WORLD3</b></font> model differentiates between capital invested in industry, capital invested in the service sector, capital invested in agriculture, and other capital investment. <p>
- 
+
 The service capital is measured in U.S. dollars.
 </html>"));
       end Service_Sector_Investment;
@@ -4684,33 +4684,33 @@ The service capital is measured in U.S. dollars.
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-260.0},{442.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,104.0},{296.0,172.0}}, textString = "Meadows'", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-78.0,-20.0},{296.0,46.0}}, textString = "Original", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,-98.0},{296.0,-30.0}}, textString = "World Model", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is the original <font color=red><b>WORLD3</b></font> model without any interventions.  In the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> it is referred to as <font color=red><b>Scenario #1</b></font>. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 169: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_1.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_2.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_3.png\"> <p>
- 
+
 <hr> <p>
- 
+
 The results obtained are not exactly the same as those shown in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> due to the integration algorithm in use.  Most <font color=red><b>Modelica</b></font> simulation environments uses by default a variable-step / variable-order DASSL algorithm, whereas <font color=red><b>STELLA</b></font>, just like the older <font color=red><b>Dynamo</b></font> software, uses by default a fixed-step Euler algorithm with a step size of 1 time unit. <p>
- 
+
 A second even more important difference is that my <font color=red><b>Modelica</b></font> code treats all variables as real-valued floating-point numbers, whereas the <font color=red><b>STELLA</b></font> model treated some variables (e.g., population) as integers, whereas it treated other variables as fixed-point variables with only two significant digits after the comma.  This led to a quite noticeable quantization error. <p>
- 
+
 As I didn't see any good reason for unnecessarily mutilating the capabilities of the <font color=red><b>Modelica</b></font> simulation environment, I decided not to replicate these features of the <font color=red><b>STELLA</b></font> code here. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_1;
@@ -4898,36 +4898,36 @@ As I didn't see any good reason for unnecessarily mutilating the capabilities of
         connect(Food_Production1.tot_agric_invest,Arable_Land_Dynamics1.tot_agric_invest) annotation(Line(points = {{-88.0,-98.0},{-88.0,-52.0},{-200.0,-52.0},{-200.0,-20.0},{-122.0,-20.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-222.0,-260.0},{440.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,58.0},{286.0,132.0}}, textString = "More Abundant", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-84.0,-14.0},{302.0,52.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-114.0,-106.0},{324.0,-2.0}}, textString = "Natural Resources", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #2</b></font> of the <font color=red><b>WORLD3</b></font> model. In the original scenario, industry stopped growing around 2040 due to an exhaustion of the remaining non-recoverable natural resources. <p>
- 
+
 In this modified scenario, the initially available non-recoverable natural resources are doubled to make them last longer.  This is a reasonable assumption, as indeed, the projections of available resources have repetitively been raised during recent decades.  Consequently, industry is able to grow unabatedly for 20 more years, before the increasing extraction cost finally puts a damper on its further growth.  Also postulated in this scenario are advances in resource extraction technology that make it cheaper and more efficient to produce the available resources. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to modify the initial value of the natural resources as follows: <p>
 <font color=red>parameter Real nr_resources_init(unit=\"ton\") = <b>2e12</b> \"Initial available non-recoverable resources\";</font>, <p>
 you need to modify the table P_Fr_Cap_Al_Obt_Res_2 that describes the fraction of capital allocated to obtaining resources: <p>
 <font color=red>parameter Real p_fr_cap_al_obt_res_2[:] = {1,<b>0.1</b>,<b>0.05</b>,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05} \"Non-renewable resource fraction remaining\";</font>, <p>
 and finally, you need to reset one of the switching times in the model: <p>
 <font color=red>parameter Real t_fcaor_time(unit=\"yr\") = <b>2002</b> \"Year of capital allocation to resource use efficiency\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 173: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_4.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_5.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_6.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_2;
@@ -5115,35 +5115,35 @@ Simulate the model from 1900 until 2100, and display the same variables as in th
         connect(Food_Production1.tot_agric_invest,Arable_Land_Dynamics1.tot_agric_invest) annotation(Line(points = {{-88.0,-98.0},{-88.0,-52.0},{-200.0,-52.0},{-200.0,-20.0},{-122.0,-20.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-260.0},{442.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,60.0},{300.0,132.0}}, textString = "More Accessible", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-82.0,-14.0},{304.0,52.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-112.0,-106.0},{326.0,-2.0}}, textString = "Natural Resources", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-136.0,-184.0},{348.0,-80.0}}, textString = "and Pollution Control", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #3</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #2</b></font>.  In that scenario, the continued production of industrial goods caused the persistent pollution to accumulate.  That pollution led to a deterioration of the fertility of our agricultural lands, which caused a collapse over time. <p>
- 
+
 For this reason, it is postulated here that improved pollution control technology can curbe the amount of pollutants released into the atmosphere by 4% starting in the year 2002.  The hope is that such a reduction can be reasonably well accomplished without suffocating the industry in the process.  In fact, our government already talk about measures that are considerably more stringent than just a 4% reduction in air pollution, although the already implemented measures have proven ineffective until now.  The greenhouse gas emissions are still growing essentially proportional with the industrial production. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to modify the table P_PPoll_Tech_Chg_Mlt_POLGFM that models a multiplier to the generation of pollution as a function of available pollution technology: <p>
 <font color=red>parameter Real p_ppoll_tech_chg_mlt[:] = {<b>-0.04</b>,<b>-0.04</b>,0,0} \"Persistent pollution technology change multiplier\";</font>, <p>
 and you also you need to reset yet another one of the switching times in the model: <p>
 <font color=red>parameter Real t_policy_year(unit=\"yr\") = <b>2002</b> \"Year of policy change\";</font>. <p>
 The latter change has lots of consequences, as this policy control parameter appears in 16 different places in the model. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 211: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_7.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_8.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_9.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_3;
@@ -5331,40 +5331,40 @@ Simulate the model from 1900 until 2100, and display the same variables as in th
         connect(Food_Production1.tot_agric_invest,Arable_Land_Dynamics1.tot_agric_invest) annotation(Line(points = {{-88.0,-98.0},{-88.0,-52.0},{-200.0,-52.0},{-200.0,-20.0},{-122.0,-20.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-260.0},{442.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,98.0},{300.0,170.0}}, textString = "More Accessible", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-82.0,24.0},{304.0,90.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-112.0,-68.0},{326.0,36.0}}, textString = "Natural Resources,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-138.0,-146.0},{360.0,-42.0}}, textString = "Pollution Control, and", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-200.0,-324.0},{418.0,-16.0}}, textString = "Land Yield Enhancement", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #4</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #3</b></font>.  Improvements in pollution control technology have led to an increase in the population. There are additional mouths to be fed, but unfortunately, not enough food is being grown to feed the population in the long run.  The population stagnates, and there is massive hunger in the world. <p>
- 
+
 In this new scenario, it is thus postulated that additional efforts are being undertaken to increase the yield of food per hectare of arable land. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to modify the table P_Yield_Tech_Chg_Mlt_LYCM  that models a multiplier to the investment in technology to improve land yield: <p>
 <font color=red>parameter Real p_yield_tech_chg_mlt[:] = {0,0,<b>0.04</b>,<b>0.04</b>} \"Yield technology change multiplier\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 215: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_10.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_11.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_12.png\"> <p>
- 
+
 <hr> <p>
- 
+
 The results obtained are visibly different from those shown in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> primarily due to the  quantization error. <p>
- 
+
 In this model, some of the gains are huge.  For example, the variable <b>agr_inp_per_hect</b>, i.e., the investment in agricultural production per hectare of arable land, that in earlier scenarios assumed values in the range <b>[2,30] dollars per hectare and year</b> suddenly assumes values of several <b>thousands of dollars per hectare and year</b>.  We observe hyperinflation at work. <p>
- 
+
 Due to the amplified quantization errors, the collapse happens more than 20 years earlier than shown in the book.  If we were to simulate beyond the year 2100, the results obtained using the <font color=red><b>Modelica</b></font> implementation could be considered similar to those obtained using <font color=red><b>STELLA</b></font>.  The trajectories simply get shifted in time.  However, since we stop the simulation in 2100, our results look qualitatively different. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_4;
@@ -5552,32 +5552,32 @@ Due to the amplified quantization errors, the collapse happens more than 20 year
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-260.0},{442.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,118.0},{300.0,190.0}}, textString = "More Accessible", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-82.0,64.0},{304.0,130.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-112.0,-14.0},{332.0,90.0}}, textString = "Natural Resources,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-108.0,-72.0},{330.0,14.0}}, textString = "Pollution Control,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-197.0,-248.0},{421.0,60.0}}, textString = "Land Yield Enhancement,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-170.0,-276.0},{377.0,-34.0}}, textString = "and Erosion Protection", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #5</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #4</b></font>.  Improvements in land yield enhancement have allowed more people to be fed a little while longer.  However, the effort is not sustainable.  The agricultural land loses its fertility rather quickly, and in the end, the collapse arrives even earlier than in <font color=red><b>Scenario #4</b></font>.  Humanity spends all of its money and more in trying to grow more food at all cost.  This leads to rampant hyperinflation. <p>
- 
+
 In this new scenario, it is thus postulated to spend more money earlier on for the protection of the arable land against erosion. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to reset another of the switching times in the model: <p>
 <font color=red>parameter Real t_land_life_time(unit=\"yr\") = <b>2002</b> \"Land life time\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 215: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_13.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_14.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_15.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_5;
@@ -5765,47 +5765,47 @@ Simulate the model from 1900 until 2100, and display the same variables as in th
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-220.0,-260.0},{442.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-80.0,118.0},{300.0,190.0}}, textString = "More Accessible", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-82.0,64.0},{304.0,130.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-112.0,-14.0},{332.0,90.0}}, textString = "Natural Resources,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-108.0,-72.0},{330.0,14.0}}, textString = "Pollution Control,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-197.0,-248.0},{421.0,60.0}}, textString = "Land Yield Enhancement,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-162.0,-264.0},{381.0,-38.0}}, textString = "Erosion Protection, and", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-138.0,-324.0},{369.0,-98.0}}, textString = "Resource Efficiency", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #6</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #5</b></font>.  Land erosion protection has indeed helped.  Yet more people can live on this planet for yet more years.  In the end, however, we are once again running out of natural resources. <p>
- 
+
 In this new scenario, it is thus postulated to spend more money on increasing the efficiency of use of the remaining natural resources. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to modify the table P_Res_Tech_Chg_Mlt_NRCM that models a multiplier to the investment in technology to increase resource use efficiency: <p>
 <font color=red>parameter Real p_res_tech_chg_mlt[:] = {<b>-0.04</b>,<b>-0.04</b>,0,0} \"Resource technology change multiplier\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 219: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_16.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_17.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_18.png\"> <p>
- 
+
 <hr> <p>
- 
+
 This seems to have done the trick.  The population no longer declines during the 21<sup>st</sup> century.  Is this effort sustainable? <p>
- 
+
 To answer this question, let us simulate the model once more, this time from 1900 until 2500: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_19.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_20.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_21.png\"> <p>
- 
+
 <hr> <p>
- 
+
 The effort is indeed sustainable.  The world population hovers around 10 billion people.  Yet, these people live very poorly.  In the end, no money is left for industrial production and/or services.  All of the human efforts are spent on feeding the world population in a sustainable fashion.  The life expectancy is back at its pre-industrial value of 27.6 years. <p>
- 
+
 No generation before ours lived as long and as prosperous as we do, and the likelihood is large that none coming after us will do so either. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_6;
@@ -5993,33 +5993,33 @@ No generation before ours lived as long and as prosperous as we do, and the like
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, origin = {2.0,-1.0}, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-222.0,-260.0},{440.0,222.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,58.0},{286.0,132.0}}, textString = "More Abundant", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-84.0,-14.0},{302.0,52.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-114.0,-106.0},{324.0,-2.0}}, textString = "Natural Resources", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,-178.0},{316.0,-78.0}}, textString = "and Birth Control", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #7</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #2</b></font>. <p>
- 
+
 We now want to try out another approach.  Instead of improving the means of production, we shall attempt strict birth control.  Every family is limited to two children only.  Due to the age structure momentum, the population keeps growing for another generation.  Then it will finally start on its path of natural attrition. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to reset two of the switching times in the model: <p>
 <font color=red>parameter Real t_fert_cont_eff_time(unit=\"yr\") = <b>2002</b> \"Year of continued fertility change\";</font>. <p>
 <font color=red>parameter Real t_zero_pop_grow_time(unit=\"yr\") = <b>2002</b> \"Time to zero population growth\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 241: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_22.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_23.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_24.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_7;
@@ -6207,39 +6207,39 @@ Simulate the model from 1900 until 2100, and display the same variables as in th
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-222.0,-262.0},{440.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-70.0,96.0},{286.0,170.0}}, textString = "More Abundant", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-84.0,24.0},{302.0,90.0}}, textString = "Non-recoverable", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-114.0,-68.0},{328.0,36.0}}, textString = "Natural Resources,", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-100.0,-140.0},{316.0,-40.0}}, textString = "Birth Control, and", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-162.0,-214.0},{386.0,-112.0}}, textString = "Stable Industrial Output", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #8</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #7</b></font>.  Birth control allowed the industrial output to grow a bit faster, but ultimately, it got stopped by the increasing cost of controlling pollution. <p>
- 
+
 We now want to control the industrial output.  Furthermore, we want to give the capital investment a 25% increased life time. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to reset two of the modify a number of parameters in the model: <p>
 <font color=red>parameter Real ind_out_pc_des(unit=\"dollar/yr\") = <b>350</b> \"Desired annual industrial per capita output\";</font>. <p>
 <font color=red>parameter Real p_avg_life_agr_inp_2(unit=\"yr\") = <b>2.5</b> \"Controlled average life of agricultural input\";</font>. <p>
 <font color=red>parameter Real p_avg_life_ind_cap_2(unit=\"yr\") = <b>18</b> \"Controlled average life of industrial capital\";</font>. <p>
 <font color=red>parameter Real p_avg_life_serv_cap_2(unit=\"yr\") = <b>25</b> \"Controlled average life of service sector capital\";</font>. <p>
- 
+
 Finally, we need to reset two more of the switching times in the model: <p>
 <font color=red>parameter Real t_ind_equil_time(unit=\"yr\") = <b>2002</b> \"Year of industrial equilibrium\";</font>. <p>
 <font color=red>parameter Real t_policy_year(unit=\"yr\") = <b>2002</b> \"Year of policy change\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 243: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_25.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_26.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_27.png\"> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_8;
@@ -6427,50 +6427,50 @@ Simulate the model from 1900 until 2100, and display the same variables as in th
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-222.0,-262.0},{440.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-64.0,40.0},{292.0,114.0}}, textString = "Combining the", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-78.0,-32.0},{308.0,34.0}}, textString = "Measures of", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-136.0,-124.0},{344.0,-20.0}}, textString = "Scenarios #6 and #8", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2100), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #9</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #8</b></font>.  Control of the industrial output helped to guarantee a relatively high standard of living for a while longer.  Yet, the stressors discussed before finally drag the system down. <p>
- 
+
 We now want to combine the measures of <font color=red><b>Scenario #6</b></font> and <font color=red><b>Scenario #8</b></font>. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, you need to modify the three tables as done earlier: <p>
 <font color=red>parameter Real p_ppoll_tech_chg_mlt[:] = {<b>-0.04</b>,<b>-0.04</b>,0,0} \"Persistent pollution technology change multiplier\";</font>, <p>
 <font color=red>parameter Real p_res_tech_chg_mlt[:] = {<b>-0.04</b>,<b>-0.04</b>,0,0} \"Resource technology change multiplier\";</font>. <p>
 <font color=red>parameter Real p_yield_tech_chg_mlt[:] = {0,0,<b>0.04</b>,<b>0.04</b>} \"Yield technology change multiplier\";</font>. <p>
- 
+
 We also need to reset one more of the switching times in the model: <p>
 <font color=red>parameter Real t_land_life_time(unit=\"yr\") = <b>2002</b> \"Land life time\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2100, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 245: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_28.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_29.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_30.png\"> <p>
- 
+
 <hr> <p>
- 
+
 This seems to have done the trick.  The population no longer declines during the 21<sup>st</sup> century.  Is this effort sustainable? <p>
- 
+
 To answer this question, let us simulate the model once more, this time from 1900 until 2500: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_31.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_32.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_33.png\"> <p>
- 
+
 <hr> <p>
- 
+
 The effort is not sustainable in the long run.  As we continue to produce industrial goods in order to maintain a high standard of living, we continue to use up the non-recoverable resources, albeit at a much slower rate.  Eventually, these resources get exhausted, and at that time, we return to a life in misery. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_9;
@@ -6658,22 +6658,22 @@ The effort is not sustainable in the long run.  As we continue to produce indust
         human_welfare_index = Human_Welfare_Index1.HWI_Human_Welfare_Index.hwi_human_welfare_index;
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-222.0,-262.0},{440.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-64.0,40.0},{292.0,114.0}}, textString = "Influencing the", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-78.0,-32.0},{308.0,34.0}}, textString = "Future", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-78.0,-126.0},{304.0,-26.0}}, textString = "20 Years Earlier", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics), experiment(StartTime = 1900, StopTime = 2500), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #10</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #9</b></font>. <p>
- 
+
 We now want to check what would have happened, had we started controlling our resources 20 years earlier. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, we need to reset all of the switching times in the model: <p>
 <font color=red>parameter Real t_fcaor_time(unit=\"yr\") = <b>1982</b> \"Year of capital allocation to resource use efficiency\";</font>. <p>
 <font color=red>parameter Real t_fert_cont_eff_time(unit=\"yr\") = <b>1982</b> \"Year of continued fertility change\";</font>. <p>
@@ -6681,18 +6681,18 @@ In order to accomplish this change, we need to reset all of the switching times 
 <font color=red>parameter Real t_land_life_time(unit=\"yr\") = <b>1982</b> \"Land life time\";</font>. <p>
 <font color=red>parameter Real t_policy_year(unit=\"yr\") = <b>1982</b> \"Year of policy change\";</font>. <p>
 <font color=red>parameter Real t_zero_pop_grow_time(unit=\"yr\") = <b>1982</b> \"Time to zero population growth\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2500, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 245: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_34.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_35.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_36.png\"> <p>
- 
+
 <hr> <p>
- 
+
 Initially, an earlier reaction would have been beneficial.  The population would have never climbed to 8 billion people.  The attainable standard of living would have been approximately equal.  In the long run, the predicament is the same as with <font color=red><b>Scenario #9</b></font>.  We are running out of the remaining non-recoverable resources.  Yet, the golden age would have lasted a bit longer. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_10;
@@ -6880,22 +6880,22 @@ Initially, an earlier reaction would have been beneficial.  The population would
         connect(Food_Production1.tot_agric_invest,Arable_Land_Dynamics1.tot_agric_invest) annotation(Line(points = {{-88.0,-98.0},{-88.0,-52.0},{-200.0,-52.0},{-200.0,-20.0},{-122.0,-20.0}}, color = {0,0,191}, visible = true));
         annotation(Icon(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {255,255,0}, fillPattern = FillPattern.Solid, extent = {{-222.0,-262.0},{440.0,220.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-64.0,40.0},{292.0,114.0}}, textString = "Influencing the", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-78.0,-32.0},{308.0,34.0}}, textString = "Future", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-72.0,-124.0},{294.0,-26.0}}, textString = "10 Years Later", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-260.0},{440.0,220.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10})), experiment(StartTime = 1900, StopTime = 2500), experimentSetupOutput, Documentation(info = "<html>
 This is <font color=red><b>Scenario #11</b></font> of the <font color=red><b>WORLD3</b></font> model. This scenario starts out with the same assumptions as <font color=red><b>Scenario #10</b></font>. <p>
- 
+
 We now want to check what would have happened, had we started controlling our resources 10 years later. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.M., Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 In order to accomplish this change, we need to reset all of the switching times in the model: <p>
 <font color=red>parameter Real t_fcaor_time(unit=\"yr\") = <b>2012</b> \"Year of capital allocation to resource use efficiency\";</font>. <p>
 <font color=red>parameter Real t_fert_cont_eff_time(unit=\"yr\") = <b>2012</b> \"Year of continued fertility change\";</font>. <p>
@@ -6903,23 +6903,23 @@ In order to accomplish this change, we need to reset all of the switching times 
 <font color=red>parameter Real t_land_life_time(unit=\"yr\") = <b>2012</b> \"Land life time\";</font>. <p>
 <font color=red>parameter Real t_policy_year(unit=\"yr\") = <b>2012</b> \"Year of policy change\";</font>. <p>
 <font color=red>parameter Real t_zero_pop_grow_time(unit=\"yr\") = <b>2012</b> \"Time to zero population growth\";</font>. <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model from 1900 until 2500, and display the same variables as in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a> at page 245: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_37.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_38.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/World3_39.png\"> <p>
- 
+
 <hr> <p>
- 
+
 The maximal population will be larger.  The attainable living standard will be approximately equal.  It is still not too late to do something.  Yet, the golden age will end quite a bit sooner. <p>
- 
+
 <hr> <p>
 </html>", revisions = ""));
       end Scenario_11;
       package Utilities "Utility models of Meadows' WORLD3 model"
-        extends Modelica.Icons.Library;
+        extends Modelica.Icons.Package;
         block Agr_Inp_Per_Hect "Agricultural input per hectare"
           extends Interfaces.Nonlin_3;
           output Real p_fr_inp_for_land_maint "Fraction of agricultural investiment allocated to land maintenance";
@@ -7725,19 +7725,19 @@ Utility models of Meadows' <font color=red><b>WORLD3</b></font> model.
       end Utilities;
       annotation(preferedView = "info", Documentation(info = "<html>
 This model implements <a href=\"http://en.wikipedia.org/wiki/Dennis_Meadows\">Dennis (and Dana) Meadows'</a> <font color=red><b>WORLD3</b></font> model as described in their 1972 book <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>.  The book has seen two later editions, one published in 1992 (20-year edition), and the most recent one published in 2004 (30-year edition).  Each of these new editions was accompanied by an updated model.  The model contained in this library is the newest model discussed in the 2004 edition <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>.  <p>
- 
+
 Whereas Jay Forrester listed his entire model in his book \"World Dynamics,\" Dennis Meadows only talked in \"Limits to Growth\" about the results obtained using his model.  The model itself is not listed. <p>
- 
+
 This was partly done because the <font color=red><b>WORLD3</b></font> model is considerably more complex than the <font color=red><b>WORLD2</b></font> model, and consequently, a thorough discussion of all facets of the model would have eaten up much more space in the book, but there is another reason as well. <p>
- 
+
 Stephen Hawking wrote in the introduction to one of his more popular books (<a href=\"http://www.amazon.com/Brief-History-Time-Stephen-Hawking/dp/0553380168\">A Brief History of Time: From the Big Bang to Black Holes</a>) that he had asked his publisher whether he could include some equations with the book.  The publisher answered that he would print anything that Stephen Hawking cared to submit for publication, but that the number of books sold would shrink by a facter of two for every added equation.  Hence Hawking decided to refrain from placing <i>any</i> equations in his book. <p>
- 
+
 Meadows is an <i>educator</i> even more than a <i>scientist</i>.  He believes strongly in his message, and he wanted to reach as many people with it as he possibly could.  Leaving the model equations out was the best way of accomplishing this goal. <p>
- 
+
 Yet, Meadows never tried to hide his model from public scrutiny.  In fact, he wrote an internal report of 637 pages that describes all facets of his model.  He published that internal report as a separate book in 1974: <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>.  The book is still available if anyone cares to buy it.  However, whereas Meadows sold millions of copies of his (popular) <i>Limits to Growth</i> book, he probably sold no more than a few hundred copies of his (technical) <i>Dynamics of Growth in a Finite World</i> report. <p>
- 
+
 Since the <font color=red><b>WORLD3</b></font> model is fairly complex, it won't fit on a single screen.  For this reason, I subdivided the model into 13 different sectors (i.e., sub-models) describing some aspects of: <br>
- 
+
 <ol>
 <li> arable land dynamics,
 <li> food production,
@@ -7753,46 +7753,46 @@ Since the <font color=red><b>WORLD3</b></font> model is fairly complex, it won't
 <li>population dynamics, and
 <li>service-sector investment.
 </ol> <p>
- 
+
 The sub-models use green icons.  In the main model (yellow icon), I simply dropped one sub-model of each type onto the screen, and connected these models appropriately. <p>
- 
+
 Whereas the <font color=red><b>WORLD2</b></font> model lumped the entire population into a single state variable, the <font color=red><b>WORLD3</b></font> model offers a demographic population dynamics model that distinguishes between children and adolescents, young adults of child-bearing age, older adults who are still integrated into the work force, and the retired population. <p>
- 
+
 The capital investment is subdivided into investments in the military/industrial complex, in the service sector, and in agriculture. <p>
- 
+
 Both the natural resources and pollution models have been upgraded by including changes in technology as factors influencing the depletion of resources and the release of pollutants.  This is meaningful as improved technology may enable us to use the available resources more efficiently, and may also make it possible to produce goods in a cleaner fashion. <p>
- 
+
 The over-all (compiled) <font color=red><b>WORLD3</b></font> model contains 41 state variables and 245 algebraic variables. <p>
- 
+
 At this time, all that remains is to thank <a href=\"http://en.wikipedia.org/wiki/Dennis_Meadows\">Prof. Meadows</a> for his support of my efforts.  Dennis was kind enough to send me his complete <font color=red><b>WORLD3</b></font> model (2004 edition, coded in <font color=red><b>STELLA</b></font>) on a CD.  All that I had to do was to translate the model, equation by equation, from <font color=red><b>STELLA</b></font> to <font color=red><b>Modelica</b></font>. <p>
- 
+
 Unfortunately, <font color=red><b>STELLA</b></font> doesn't offer means for documenting models in an explicit way.  There was not a single line of comments in the entire model.  Meadows compensated for this lack of documentability by choosing very long variable names.  These helped tremendously in deciphering the meaning of the model.  I hope I didn't goof up too badly in doing so. <p>
- 
+
 In order to make it as easy as possible to compare the <font color=red><b>Modelica</b></font> version of the <font color=red><b>WORLD3</b></font> model with the <font color=red><b>STELLA</b></font>-coded original, I decided to keep the same variable names in my model that Dennis had chosen for his version. <p>
- 
+
 I also wish to acknowledge <a href=\"http://www.bi.no/Content/AcademicProfile____63388.aspx?ansattid=/fgl99096\">Prof. J�rgen Randers</a> who provided me with the information necessary to reproduce the 10 scenarios proposed in the book <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Meadows, D.H., D.L. Meadows, J. Randers, and W.W. Behrens III (1972), <i>Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind</i>, Universe Books, New York, 205p.
 <li> Meadows, D.L., W.W. Behrens III, D.H. Meadows, R.F. Naill, J. Randers, and E.K.O. Zahn (1974), <a href=\"http://www.pegasuscom.com/BookDetail.asp?BookQuery_Action=Find('ISBN','XDYGO')\">Dynamics of Growth in a Finite World</a>, Wright-Allen Press, 637p.
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
 </html>", revisions = ""), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "WORLD3"),Text(lineColor = {0,0,255}, extent = {{-73.9,25.05},{72,-18}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "world model as proposed"),Text(lineColor = {0,0,255}, extent = {{-69.8,38.1},{68,12}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "describes the enhanced"),Text(lineColor = {0,0,255}, extent = {{-39.7,-30.85},{42,-58}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "in their book"),Text(lineColor = {0,0,255}, extent = {{-91.6,-2.8},{94,-38}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "by Dennis and Dana Meadows"),Text(lineColor = {0,0,255}, extent = {{-49.7,-52.85},{56,-84}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "Limits to Growth.")}));
     end World3;
     annotation(preferedView = "info", Documentation(info = "<html>
 This package offers currently two different world models: <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Jay Forrester's</a> <font color=red><b>WORLD2</b></font> model (1971), and <a href=\"http://en.wikipedia.org/wiki/Dennis_Meadows\">Dennis (and Dana) Meadows'</a> <font color=red><b>WORLD3</b></font> model (1972), the latter in its most recently updated form of 2004. <p>
- 
+
 World modeling is one of the most important applications of the System Dynamics methodology.  This application, highly popular in the 1970s, has recently found renewed interest due to the widely discussed advents of <font color=red><b>Peak Oil</b></font> and <font color=red><b>Global Warming</b></font>. <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Forrester, J.W. (1971), <a href=\"http://www.amazon.com/World-Dynamics-Jay-W-Forrester/dp/1883823382/ref=ed_oe_h/103-2487145-1208659\">World Dynamics</a>, Pegasus Communications, 160p.
@@ -7800,7 +7800,7 @@ World modeling is one of the most important applications of the System Dynamics 
 <li> Meadows, D.H., D.L. Meadows, and J. Randers (1992), <i>Beyond the Limits</i>, Chelsea Green, 300p.
 <li> Meadows, D.H., J. Randers, and D.L. Meadows (2004), <a href=\"http://www.amazon.com/Limits-Growth-Donella-H-Meadows/dp/193149858X\">Limits to Growth: The 30-Year Update</a>, Chelsea Green, 368p.
 </ol> <p>
- 
+
 <hr> <p>
 </html>"), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "World Dynamics"),Text(lineColor = {0,0,255}, extent = {{-65.9,17.05},{64,-20}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "for discussing some"),Text(lineColor = {0,0,255}, extent = {{-59.8,30.1},{56,8}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "global world models"),Text(lineColor = {0,0,255}, extent = {{-45.7,-4.85},{44,-38}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "aspects of the"),Text(lineColor = {0,0,255}, extent = {{-79.6,-25.8},{80,-58}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "predicament of mankind."),Text(lineColor = {0,0,255}, extent = {{-54,54},{48,22}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "provides a set of")}));
   end WorldDynamics;
@@ -7894,21 +7894,21 @@ World modeling is one of the most important applications of the System Dynamics 
       x3 = Predator.y;
       annotation(Diagram(coordinateSystem(extent = {{-200.0,-200.0},{260.0,200.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{138.0,8.0},{142.0,12.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-82.0,28.0},{-78.0,32.0}}),Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-67.0,48.0},{-63.0,52.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{153.0,49.0},{157.0,53.0}})}), experiment(StopTime = 5000, Tolerance = 0.00000000001, StartTime = 0.0, Algorithm = "dassl"), experimentSetupOutput, Documentation(info = "<html>
 The Gilpin model is a model to describe and analyze the natural occurrence of chaotic motion in population dynamics. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Cellier, F.E. (1991), <a href=\"http://www.amazon.com/Continuous-System-Modeling-Fran%C3%A7ois-Cellier/dp/0387975020\">Continuous System Modeling</a>, Springer-Verlag, New York, ISBN: 0-387-97502-0, 755p.
 <li> Gilpin, M.E. (1979), \"Spiral Chaos in a Predator-Prey Model,\" <i>The American Naturalist</i>, <b>113</b>, pp.306-308.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 5000 time units and plot the three populations: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Gilpin_1.png\"> <p>
- 
+
 You need to reduce the accuracy to 1e-10 in order for the simulation to run correctly.
 </html>", revisions = ""), Icon(coordinateSystem(extent = {{-200.0,-200.0},{260.0,200.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {192,192,192}, fillPattern = FillPattern.Solid, extent = {{-200.0,-200.0},{260.0,200.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-94.0,60.0},{154.0,114.0}}, textString = "Gilpin's", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-150.0,-44.0},{212.0,56.0}}, textString = "Population Dynamics Model", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-76.0,-72.0},{132.0,-10.0}}, textString = "with Spiral Chaos", fontName = "Arial")}));
     end Gilpin;
@@ -7960,42 +7960,42 @@ You need to reduce the accuracy to 1e-10 in order for the simulation to run corr
       lynx = Lynx.y;
       annotation(Diagram(coordinateSystem(extent = {{-100.0,-100.0},{140.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,191}, fillColor = {0,0,191}, fillPattern = FillPattern.Solid, extent = {{33.0,19.0},{35.0,21.0}})}), experiment(StopTime = 60, Tolerance = 0.0000000001, Algorithm = "dassl"), experimentSetupOutput, Documentation(info = "<html>
 The hare/lynx interaction model is a typical two-species predator/prey model.  This example has been borrowed from <font color=red><b>SystemDynamics 1.0</b></font>.  The original version of this example can be found in the <font color=red><b>STELLA</b></font> tutorial. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Richmond, B., S. Peterson, and P. Vescuso (1987), <a href=\"http://www.amazon.com/ACADEMIC-USERS-GUIDE-STELLA/dp/B000RRMJHS/ref=sr_1_6/103-2487145-1208659?ie=UTF8&s=books&qid=1188791651&sr=1-6\">An Academic User's Guide to STELLA</a>, High Performance Systems, Inc., Lyme, N.H.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 60 time units and plot the two animal populations against simulation time: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Hare_1.png\"> <p>
- 
+
 You need to reduce the accuracy to 1e-10 in order for the simulation to run correctly. <p>
- 
+
 Also plot the two population against each other: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Hare_2.png\"> <p>
- 
+
 You shall notice that the limit cycle is mildly unstable. <p>
- 
+
 The simulation results obtained are not exactly the same as with <font color=red><b>SystemDynamics 1.0</b></font>.  The reason is that the previous version used tabular interpolation functions with linear extrapolation, whereas the new version uses tabular interpolation functions without extrapolation capability (a more prudent approach).  In line with <font color=red><b>STELLA</b></font> philosophy, the support values of the two tabular functions were manually extended to reflect a <i>constant</i> rather than a <i>linear</i> extrapolation.
 </html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0,-100.0},{140.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {160,160,160}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{140.0,100.0}}),Text(visible = true, lineColor = {0,0,255}, extent = {{-82.0,16.0},{124.0,76.0}}, textString = "Hare/Lynx interaction", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-32.0,-16.0},{60.0,8.0}}, textString = "predator/prey", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-28.0,0.0},{58.0,30.0}}, textString = "two species", fontName = "Arial"),Text(visible = true, lineColor = {0,0,255}, extent = {{-28.0,-34.0},{54.0,-14.0}}, textString = "model", fontName = "Arial")}));
     end Hair_Lynx_Interaction;
     package Influenza "Model of an influenza epidemic"
       extends Modelica.Icons.Example annotation(preferedView = "info", Documentation(info = "<html>
 The influenza model describes the outbreak of an influenza epidemic.  The model was adapted from the <font color=red><b>STELLA</b></font> manual. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Richmond, B., S. Peterson, and P. Vescuso (1987), <i>An Academic User's Guide to STELLA</i>, High Performance Systems, Inc., Lyme, N.H.
 </ol> <p>
- 
+
 <hr> <p>
   </html>", revisions = ""));
       block Infection_Rate "Non-linear infection rate model"
@@ -8085,21 +8085,21 @@ Non-linear function describing the rate equations.
         when time > 8.0 then
                   reinit(Non_infected.Integrator1.y, 9999);
           reinit(Infected.Integrator1.y, 1);
-        
+
         end when;
         annotation(Icon(coordinateSystem(extent = {{-100.0,-100.0},{140.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, fillColor = {160,160,160}, fillPattern = FillPattern.Solid, extent = {{-100.0,-100.0},{140.0,100.0}}),Text(visible = true, origin = {2.8968,10.4851}, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-64.2134,12.5294},{97.1032,59.5149}}, textString = "Influenza", fontName = "Arial"),Text(visible = true, origin = {1.9076,-50.6957}, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-24.3826,-12.1913},{45.7174,6.0957}}, textString = "epidemic", fontName = "Arial"),Text(visible = true, origin = {-18.2479,-50.0}, lineColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-68.1021,-0.0},{141.0687,51.3859}}, textString = "Outbreak of an influenza", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-220.0,-220.0},{200.0,160.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{54.0,-3.0},{60.0,3.0}})}), experiment(StopTime = 52, StartTime = 0.0, NumberOfIntervals = 1000, Algorithm = "dassl", Tolerance = 0.000001), experimentSetupOutput, Documentation(info = "<html>
 The influenza model describes the outbreak of an influenza epidemic.  The model was adapted from the <font color=red><b>STELLA</b></font> manual. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Richmond, B., S. Peterson, and P. Vescuso (1987), <i>An Academic User's Guide to STELLA</i>, High Performance Systems, Inc., Lyme, N.H.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 52 time units and plot the four populations: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Influenza_1.png\">
 </html>", revisions = ""));
@@ -8190,17 +8190,17 @@ Simulate the model across 52 time units and plot the four populations: <p>
       Vol_out = Vol_Outside.y;
       annotation(Icon(coordinateSystem(extent = {{-140.0,-160.0},{160.0,160.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {191,95,0}, fillPattern = FillPattern.VerticalCylinder, extent = {{-20.0,-80.0},{20.0,100.0}}),Line(visible = true, points = {{-10.0,50.0},{-10.0,-8.0}}, color = {0,0,255}),Line(visible = true, points = {{-4.0,30.0},{-4.0,-28.0}}, color = {0,0,255}),Line(visible = true, points = {{10.0,74.0},{10.0,16.0}}, color = {0,0,255}),Line(visible = true, points = {{6.0,-2.0},{6.0,-60.0}}, color = {0,0,255}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {160,160,160}, fillPattern = FillPattern.Backward, extent = {{-120.0,-100.0},{140.0,-80.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{-120.0,-80.0},{-20.0,40.0}}),Rectangle(visible = true, lineColor = {0,0,255}, fillColor = {0,255,255}, fillPattern = FillPattern.Solid, extent = {{20.0,-80.0},{140.0,40.0}}),Line(visible = true, points = {{-92.0,20.0},{-70.0,20.0}}, color = {0,0,255}),Line(visible = true, points = {{-78.0,10.0},{-56.0,10.0}}, color = {0,0,255}),Line(visible = true, points = {{-100.0,-38.0},{-78.0,-38.0}}, color = {0,0,255}),Line(visible = true, points = {{-62.0,-32.0},{-40.0,-32.0}}, color = {0,0,255}),Line(visible = true, points = {{-106.0,-8.0},{-84.0,-8.0}}, color = {0,0,255}),Line(visible = true, points = {{40.0,14.0},{62.0,14.0}}, color = {0,0,255}),Line(visible = true, points = {{92.0,-44.0},{114.0,-44.0}}, color = {0,0,255}),Line(visible = true, points = {{40.0,-58.0},{62.0,-58.0}}, color = {0,0,255}),Line(visible = true, points = {{60.0,-38.0},{82.0,-38.0}}, color = {0,0,255}),Line(visible = true, points = {{62.0,-4.0},{84.0,-4.0}}, color = {0,0,255})}), Diagram(coordinateSystem(extent = {{-140.0,-160.0},{160.0,160.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{-96.0,18.0},{-92.0,22.0}}),Ellipse(visible = true, lineColor = {0,0,255}, fillColor = {0,0,255}, fillPattern = FillPattern.Solid, extent = {{108.0,18.0},{112.0,22.0}})}), experiment(StopTime = 20), experimentSetupOutput, Documentation(info = "<html>
 The sugar cane model describes the processes of diffusion and osmosis in a sugar cane plant.  The model was adapted from the STELLA manual. <p>
- 
+
 <hr> <p>
- 
+
 <b>References:</b> <p>
- 
+
 <ol>
 <li> Richmond, B., S. Peterson, and P. Vescuso (1987), <i>An Academic User's Guide to STELLA</i>, High Performance Systems, Inc., Lyme, N.H.
 </ol> <p>
- 
+
 <hr> <p>
- 
+
 Simulate the model across 20 time units and plot on three separate graphs the two water concentrations (inside and outside), the two sugar concentrations, and the two volumes: <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Sugar_Cane_1.png\"> <p>
 <img src=\"modelica://SystemDynamics/Resources/Images/Sugar_Cane_2.png\"> <p>
@@ -8211,7 +8211,7 @@ Simulate the model across 20 time units and plot on three separate graphs the tw
 This package contains a number of introductory examples that can be used to familiarize oneself with the System Dynamics methodology and with the <font color=red><b>SystemDynamics</b></font> library.
 </html>"));
   end IntroductoryExamples;
-  annotation(__Wolfram(itemFlippingEnabled = true), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {191,81,6}, pattern = LinePattern.None, fillPattern = FillPattern.Sphere, lineThickness = 4, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 25),Ellipse(visible = true, lineColor = {255,255,255}, fillColor = {255,255,255}, lineThickness = 20, extent = {{-50.0,-50.0},{50.0,50.0}}, endAngle = 175),Ellipse(visible = true, lineColor = {253,106,8}, lineThickness = 20, extent = {{-50.0,50.0},{50.0,-50.0}}, startAngle = 5, endAngle = 180),Ellipse(visible = true, lineColor = {107,48,3}, fillColor = {0,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Sphere, extent = {{-40.0,-40.0},{40.0,40.0}}),Polygon(visible = true, origin = {50.0,-13.333}, fillColor = {255,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,13.333},{0.0,-21.667},{-25.0,13.333}}),Polygon(visible = true, origin = {-50.0,13.333}, lineColor = {254,180,9}, fillColor = {253,106,8}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,-13.333},{0.0,21.667},{-25.0,-13.333}})}), version = "2.1", uses(Modelica(version = "3.2.1")), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, textString = "System Dynamics", fillColor = {0,0,0}, lineThickness = 0.5),Text(lineColor = {0,0,255}, extent = {{-57.9,13.05},{52,-12}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "for modeling mass"),Text(lineColor = {0,0,255}, extent = {{-39.8,30.1},{34,10}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "methodology"),Text(lineColor = {0,0,255}, extent = {{-63.7,-0.85},{58,-38}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "and information flows"),Text(lineColor = {0,0,255}, extent = {{-83.6,-23.8},{82,-58}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "in a continuous-time system."),Text(lineColor = {0,0,255}, extent = {{-54,54},{48,22}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "offers a general")}), Documentation(info = "<html><p>The <span style=\"color: red;\"><strong>SystemDynamics</strong></span> library is designed as a graphical library for modeling mass and information flows in a continuous-time system using <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Prof. Jay Forrester's</a> System Dynamics metaphor.  Two separate and independent versions of this library had originally been created by <a href=\"http://www.promasim.com/\">Dr. Stefan Fabricius</a> and by <a href=\"http://www.inf.ethz.ch/~fcellier/\">Prof. Fran&ccedil;ois Cellier</a> and his students.  These have now been merged into a single version that has furthermore been enhanced as well.</p>
+  annotation(__Wolfram(itemFlippingEnabled = true), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {191,81,6}, pattern = LinePattern.None, fillPattern = FillPattern.Sphere, lineThickness = 4, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 25),Ellipse(visible = true, lineColor = {255,255,255}, fillColor = {255,255,255}, lineThickness = 20, extent = {{-50.0,-50.0},{50.0,50.0}}, endAngle = 175),Ellipse(visible = true, lineColor = {253,106,8}, lineThickness = 20, extent = {{-50.0,50.0},{50.0,-50.0}}, startAngle = 5, endAngle = 180),Ellipse(visible = true, lineColor = {107,48,3}, fillColor = {0,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Sphere, extent = {{-40.0,-40.0},{40.0,40.0}}),Polygon(visible = true, origin = {50.0,-13.333}, fillColor = {255,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,13.333},{0.0,-21.667},{-25.0,13.333}}),Polygon(visible = true, origin = {-50.0,13.333}, lineColor = {254,180,9}, fillColor = {253,106,8}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,-13.333},{0.0,21.667},{-25.0,-13.333}})}), version = "2.1.1", uses(Modelica(version = "3.2.3")), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, textString = "System Dynamics", fillColor = {0,0,0}, lineThickness = 0.5),Text(lineColor = {0,0,255}, extent = {{-57.9,13.05},{52,-12}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "for modeling mass"),Text(lineColor = {0,0,255}, extent = {{-39.8,30.1},{34,10}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "methodology"),Text(lineColor = {0,0,255}, extent = {{-63.7,-0.85},{58,-38}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "and information flows"),Text(lineColor = {0,0,255}, extent = {{-83.6,-23.8},{82,-58}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "in a continuous-time system."),Text(lineColor = {0,0,255}, extent = {{-54,54},{48,22}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "offers a general")}), Documentation(info = "<html><p>The <span style=\"color: red;\"><strong>SystemDynamics</strong></span> library is designed as a graphical library for modeling mass and information flows in a continuous-time system using <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Prof. Jay Forrester's</a> System Dynamics metaphor.  Two separate and independent versions of this library had originally been created by <a href=\"http://www.promasim.com/\">Dr. Stefan Fabricius</a> and by <a href=\"http://www.inf.ethz.ch/~fcellier/\">Prof. Fran&ccedil;ois Cellier</a> and his students.  These have now been merged into a single version that has furthermore been enhanced as well.</p>
 <p>System Dynamics offers a fairly low-level graphical interface, not much different from a block diagram.  The fact that continuous systems contain differential equations is hidden from the user by talking about <span style=\"color: red;\"><strong>levels</strong></span>, i.e., quantities that can accumulate (state variables), and <span style=\"color: red;\"><strong>rates</strong></span>, i.e., quantities that influence the accumulation and/or depletion of levels (state derivatives).</p>
 <p>The System Dynamics modeling metaphor is widely used especially by researchers in the life sciences and social sciences.</p>
 <p>&nbsp;</p>
@@ -8247,6 +8247,5 @@ This package contains a number of introductory examples that can be used to fami
 <p><strong>Copyright (C) 2002-2006, Stefan Fabricius.</strong> <br /> <strong>Copyright (C) 2007-2013, Fran&ccedil;ois E. Cellier.</strong></p>
 <p><em>The SystemDynamics package is <strong>free</strong> software; it can be redistributed and/or modified under the terms of the <strong>Modelica License 1.1</strong>, see the license conditions and the accompanying <strong>disclaimer</strong> in the <a href=\"modelica://SystemDynamics/Resources/ModelicaLicense1.1.txt\">documentation</a>.</em></p>
 <p>&nbsp;</p>
-<hr /> </html>", revisions = ""));
+<hr /> </html>"));
 end SystemDynamics;
-
