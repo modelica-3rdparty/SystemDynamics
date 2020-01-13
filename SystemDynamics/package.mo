@@ -8241,11 +8241,13 @@ This package contains a number of introductory examples that can be used to fami
 <li>Version 1.0: April 9, 2002 </li>
 <li>Version 2.0: September 13, 2007 </li>
 <li>Version 2.1: October 16, 2013</li>
+<li>Version 2.1.1: January 13, 2020</li>
 </ul>
 <p>&nbsp;</p>
 <hr />
 <p><strong>Copyright (C) 2002-2006, Stefan Fabricius.</strong> <br /> <strong>Copyright (C) 2007-2013, Fran&ccedil;ois E. Cellier.</strong></p>
-<p><em>The SystemDynamics package is <strong>free</strong> software; it can be redistributed and/or modified under the terms of the <strong>Modelica License 1.1</strong>, see the license conditions and the accompanying <strong>disclaimer</strong> in the <a href=\"modelica://SystemDynamics/Resources/ModelicaLicense1.1.txt\">documentation</a>.</em></p>
+<p><em>The SystemDynamics package is <strong>free</strong> software; it can be redistributed and/or modified under the terms of the
+<a href=\"modelica://SystemDynamics/Resources/LICENSE\">3-Clause BSD License</a>.</p>
 <p>&nbsp;</p>
 <hr /> </html>"));
 end SystemDynamics;
