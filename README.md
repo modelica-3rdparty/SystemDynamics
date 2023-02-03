@@ -11,7 +11,7 @@ The documentation is included in the source code package.
 
 ## Current release
 
-Download [SystemDynamics v2.1.2 (2022-02-03)](../../archive/v2.1.2.zip)
+Download [SystemDynamics v2.1.2 (2023-02-03)](../../archive/v2.1.2.zip)
 
 #### Release notes
 * [Version v2.1.2 (2023-02-03)](../../archive/v2.1.2.zip)
