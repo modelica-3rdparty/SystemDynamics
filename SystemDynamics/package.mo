@@ -1,4 +1,4 @@
-package SystemDynamics "System Dynamics Library (Version 2.1.1)"
+﻿package SystemDynamics "System Dynamics Library (Version 2.1.1)"
   package UsersGuide "User's Guide"
     extends Modelica.Icons.Information;
     package Overview "Overview of Library"
@@ -339,7 +339,7 @@ This package contains a set of simple static relationships that are frequently u
 This package contains a number of standard functional relationships used in the System Dynamics methodology.
 </html>"));
     block Dead_Time "Delay function"
-      parameter Modelica.SIunits.Time delayTime = 1 "Delay time of output with respect to input signal";
+      parameter Modelica.Units.SI.Time delayTime = 1 "Delay time of output with respect to input signal";
       Modelica.Blocks.Interfaces.RealInput u "Input variable" annotation(Placement(visible = true, transformation(origin = {-110.0,0.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0), iconTransformation(origin = {-110.0,0.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
       Modelica.Blocks.Interfaces.RealOutput y "Output variable" annotation(Placement(visible = true, transformation(origin = {110.0,0.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0), iconTransformation(origin = {110.0,0.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
       Modelica.Blocks.Nonlinear.FixedDelay FixedDelay(delayTime = delayTime) annotation(Placement(visible = true, transformation(origin = {0.0,0.0}, extent = {{-20.0,-20.0},{20.0,20.0}}, rotation = 0)));
@@ -544,7 +544,7 @@ Utility models of the set of functions.
         input Real x_grid[:] "Independent variable data points";
         input Real y_grid[:] "Dependent variable data points";
         output Real y "Interpolated result";
-      protected
+    protected
         Integer n;
       algorithm
         n:=size(x_grid, 1);
@@ -1501,7 +1501,7 @@ Choose <font color=red><b>Radau-IIa</b></font> as your integration algorithm.  I
         SystemDynamics.IndustrialDynamics.Inventory.Factory Factory1(ALF = 1000 * RRFiniTop, RRFini = RRFiniTop) annotation(Placement(visible = true, transformation(origin = {-34.75,0.25}, extent = {{-12.75,-12.75},{12.75,12.75}}, rotation = 0)));
         SystemDynamics.IndustrialDynamics.Inventory.Distribution Distribution1(RRDini = RRDiniTop) annotation(Placement(visible = true, transformation(origin = {-4.75,0.25}, extent = {{-12.75,-12.75},{12.75,12.75}}, rotation = 0)));
         SystemDynamics.IndustrialDynamics.Inventory.Retail Retail1(RRRini = RRRiniTop) annotation(Placement(visible = true, transformation(origin = {25.25,0.25}, extent = {{-12.75,-12.75},{12.75,12.75}}, rotation = 0)));
-        Modelica.Blocks.Sources.Sine Orders(amplitude = 100, freqHz = 1 / 52, offset = 1000) annotation(Placement(visible = true, transformation(origin = {0.0,30.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
+        Modelica.Blocks.Sources.Sine Orders(amplitude = 100, f = 1 / 52, offset = 1000) annotation(Placement(visible = true, transformation(origin = {0.0,30.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
       equation
         connect(Orders.y,Retail1.rrr) annotation(Line(visible = true, points = {{11.0,30.0},{45.0,30.0},{45.0,8.41},{36.47,8.41}}, color = {0,0,191}));
         connect(Retail1.ssd,Distribution1.ssd) annotation(Line(visible = true, points = {{14.03,-2.81},{10.515,-2.81},{10.515,-2.81},{6.47,-2.81}}, color = {95,0,191}));
@@ -1543,7 +1543,7 @@ Simulate the model across 120 weeks, and plot on one graph the incoming orders a
         SystemDynamics.IndustrialDynamics.Inventory.Factory Factory1(RRFini = RRFiniTop, ALF = 1200) annotation(Placement(visible = true, transformation(origin = {-34.75,0.25}, extent = {{-12.75,-12.75},{12.75,12.75}}, rotation = 0)));
         SystemDynamics.IndustrialDynamics.Inventory.Distribution Distribution1(RRDini = RRDiniTop) annotation(Placement(visible = true, transformation(origin = {-4.75,0.25}, extent = {{-12.75,-12.75},{12.75,12.75}}, rotation = 0)));
         SystemDynamics.IndustrialDynamics.Inventory.Retail Retail1(RRRini = RRRiniTop) annotation(Placement(visible = true, transformation(origin = {25.25,0.25}, extent = {{-12.75,-12.75},{12.75,12.75}}, rotation = 0)));
-        Modelica.Blocks.Sources.Sine Orders(amplitude = 100, freqHz = 1 / 52, offset = 1000) annotation(Placement(visible = true, transformation(origin = {0.0,30.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
+        Modelica.Blocks.Sources.Sine Orders(amplitude = 100, f = 1 / 52, offset = 1000) annotation(Placement(visible = true, transformation(origin = {0.0,30.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
       equation
         connect(Orders.y,Retail1.rrr) annotation(Line(visible = true, points = {{11.0,30.0},{45.0,30.0},{45.0,8.41},{36.47,8.41}}, color = {0,0,191}));
         connect(Retail1.ssd,Distribution1.ssd) annotation(Line(visible = true, points = {{14.03,-2.81},{10.515,-2.81},{10.515,-2.81},{6.47,-2.81}}, color = {95,0,191}));
@@ -1879,7 +1879,7 @@ Logarithmic transformation.
       end Logarithm;
       model LBM "Larch bud moth population dynamics model"
         parameter Real wintermortality = 0.5728 "Percentage of eggs dying during the winter";
-        parameter Modelica.SIunits.Mass biomass = 91.3 "Dry needle biomass per tree";
+        parameter Modelica.Units.SI.Mass biomass = 91.3 "Dry needle biomass per tree";
         parameter Integer nbr_trees = 511147 "Number of trees";
         parameter Integer egg0 = 4765975 "Initial number of eggs";
         parameter Real rawfiber0 = 15.0 "Initial rawfiber";
@@ -2757,10 +2757,10 @@ Simulate the model across 200 years, and plot the state variables as well as the
         Real POLN(unit = "1/yr") "Normal pollution";
         Real DRN(unit = "1/yr") "Normal death rate";
         Real Pop_meas;
-      protected
+    protected
         Real time_vals[12](each unit = "yr") = {1900,1910,1920,1930,1940,1950,1960,1970,1980,1990,2000,2500};
         Real pop_vals[12] = {1600000000.0,1750000000.0,1860000000.0,2070000000.0,2300000000.0,2556000000.0,3039500000.0,3706560000.0,4378100000.0,5190300000.0,5996200000.0,6000000000.0};
-      public
+    public
         SystemDynamics.Sources.Source Source1 annotation(Placement(visible = true, transformation(origin = {-150.0,140.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
         SystemDynamics.Rates.Rate_1 Birth_Rate annotation(Placement(visible = true, transformation(origin = {-120.0,140.0}, extent = {{-20.0,-20.0},{20.0,20.0}}, rotation = 0)));
         SystemDynamics.Levels.Level Population(x0 = Population_0) annotation(Placement(visible = true, transformation(origin = {-70.0,140.0}, extent = {{-20.0,-20.0},{20.0,20.0}}, rotation = 0)));
@@ -3008,12 +3008,12 @@ Simulate the model across 100 years, and plot the simulated and the measured wor
         Real POLN(unit = "1/yr") "Normal pollution";
         Real DRN(unit = "1/yr") "Normal death rate";
         Real Pop_meas;
-      protected
+    protected
         Real time_vals[12] = {1900,1910,1920,1930,1940,1950,1960,1970,1980,1990,2000,2500};
         Real pop_vals[12] = {1600000000.0,1750000000.0,1860000000.0,2070000000.0,2300000000.0,2556000000.0,3039500000.0,3706560000.0,4378100000.0,5190300000.0,5996200000.0,6000000000.0};
         Real dir;
         parameter Real time_reverse(unit = "yr") = 200 "Time of time reversal";
-      public
+    public
         SystemDynamics.Sources.Source Source1 annotation(Placement(visible = true, transformation(origin = {-150.0,140.0}, extent = {{-10.0,-10.0},{10.0,10.0}}, rotation = 0)));
         SystemDynamics.Rates.Rate_1 Birth_Rate annotation(Placement(visible = true, transformation(origin = {-120.0,140.0}, extent = {{-20.0,-20.0},{20.0,20.0}}, rotation = 0)));
         SystemDynamics.Levels.Reverse_Level Population(x0 = Population_0) annotation(Placement(visible = true, transformation(origin = {-70.0,140.0}, extent = {{-20.0,-20.0},{20.0,20.0}}, rotation = 0)));
@@ -8211,7 +8211,7 @@ Simulate the model across 20 time units and plot on three separate graphs the tw
 This package contains a number of introductory examples that can be used to familiarize oneself with the System Dynamics methodology and with the <font color=red><b>SystemDynamics</b></font> library.
 </html>"));
   end IntroductoryExamples;
-  annotation(__Wolfram(itemFlippingEnabled = true), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics = {Rectangle(visible = true, lineColor = {191,81,6}, pattern = LinePattern.None, fillPattern = FillPattern.Sphere, lineThickness = 4, extent = {{-100.0,-100.0},{100.0,100.0}}, radius = 25),Ellipse(visible = true, lineColor = {255,255,255}, fillColor = {255,255,255}, lineThickness = 20, extent = {{-50.0,-50.0},{50.0,50.0}}, endAngle = 175),Ellipse(visible = true, lineColor = {253,106,8}, lineThickness = 20, extent = {{-50.0,50.0},{50.0,-50.0}}, startAngle = 5, endAngle = 180),Ellipse(visible = true, lineColor = {107,48,3}, fillColor = {0,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Sphere, extent = {{-40.0,-40.0},{40.0,40.0}}),Polygon(visible = true, origin = {50.0,-13.333}, fillColor = {255,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,13.333},{0.0,-21.667},{-25.0,13.333}}),Polygon(visible = true, origin = {-50.0,13.333}, lineColor = {254,180,9}, fillColor = {253,106,8}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,-13.333},{0.0,21.667},{-25.0,-13.333}})}), version = "2.1.1", uses(Modelica(version = "3.2.3")), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, textString = "System Dynamics", fillColor = {0,0,0}, lineThickness = 0.5),Text(lineColor = {0,0,255}, extent = {{-57.9,13.05},{52,-12}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "for modeling mass"),Text(lineColor = {0,0,255}, extent = {{-39.8,30.1},{34,10}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "methodology"),Text(lineColor = {0,0,255}, extent = {{-63.7,-0.85},{58,-38}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "and information flows"),Text(lineColor = {0,0,255}, extent = {{-83.6,-23.8},{82,-58}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "in a continuous-time system."),Text(lineColor = {0,0,255}, extent = {{-54,54},{48,22}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "offers a general")}), Documentation(info = "<html><p>The <span style=\"color: red;\"><strong>SystemDynamics</strong></span> library is designed as a graphical library for modeling mass and information flows in a continuous-time system using <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Prof. Jay Forrester's</a> System Dynamics metaphor.  Two separate and independent versions of this library had originally been created by <a href=\"http://www.promasim.com/\">Dr. Stefan Fabricius</a> and by <a href=\"http://www.inf.ethz.ch/~fcellier/\">Prof. Fran&ccedil;ois Cellier</a> and his students.  These have now been merged into a single version that has furthermore been enhanced as well.</p>
+  annotation(__Wolfram(itemFlippingEnabled = true), Icon(coordinateSystem(extent = {{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10,10}), graphics={Rectangle(visible = true, lineColor = {191,81,6}, pattern = LinePattern.None,fillPattern = FillPattern.Sphere, lineThickness = radius = 25),Ellipse(visible = true, lineColor = {255,255,255}, fillColor = {255,255,255}, lineThickness = 20, extent = {{-50.0,-50.0},{50.0,50.0}}, endAngle = 175),Ellipse(visible = true, lineColor = {253,106,8}, lineThickness = 20, extent = {{-50.0,50.0},{50.0,-50.0}}, startAngle = 5, endAngle = 180),Ellipse(visible = true, lineColor = {107,48,3}, fillColor = {0,255,255}, pattern = LinePattern.None,fillPattern = FillPattern.Sphere, extent = {{-40.0,-40.0},{40.0,40.0}}),Polygon(visible = true, origin = {50.0,-13.333}, fillColor = {255,255,255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,13.333},{0.0,-21.667},{-25.0,13.333}}),Polygon(visible = true, origin = {-50.0,13.333}, lineColor = {254,180,9}, fillColor = {253,106,8}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{25.0,-13.333},{0.0,21.667},{-25.0,-13.333}})}), version="2.1.2", uses(Modelica(version="4.0.0")), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}), graphics = {Rectangle(extent = {{-100,100},{100,-100}}, fillPattern = FillPattern.Solid, lineColor = {0,0,0}, lineThickness = 0.5, fillColor = {160,160,160}),Text(lineColor = {0,0,255}, extent = {{-80,90},{76,36}}, textString = "System Dynamics", fillColor = {0,0,0}, lineThickness = 0.5),Text(lineColor = {0,0,255}, extent = {{-57.9,13.05},{52,-12}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "for modeling mass"),Text(lineColor = {0,0,255}, extent = {{-39.8,30.1},{34,10}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "methodology"),Text(lineColor = {0,0,255}, extent = {{-63.7,-0.85},{58,-38}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "and information flows"),Text(lineColor = {0,0,255}, extent = {{-83.6,-23.8},{82,-58}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "in a continuous-time system."),Text(lineColor = {0,0,255}, extent = {{-54,54},{48,22}}, fillColor = {0,0,0}, lineThickness = 0.5, textString = "offers a general")}), Documentation(info = "<html><p>The <span style=\"color: red;\"><strong>SystemDynamics</strong></span> library is designed as a graphical library for modeling mass and information flows in a continuous-time system using <a href=\"http://en.wikipedia.org/wiki/Jay_Wright_Forrester\">Prof. Jay Forrester's</a> System Dynamics metaphor.  Two separate and independent versions of this library had originally been created by <a href=\"http://www.promasim.com/\">Dr. Stefan Fabricius</a> and by <a href=\"http://www.inf.ethz.ch/~fcellier/\">Prof. Fran&ccedil;ois Cellier</a> and his students.  These have now been merged into a single version that has furthermore been enhanced as well.</p>
 <p>System Dynamics offers a fairly low-level graphical interface, not much different from a block diagram.  The fact that continuous systems contain differential equations is hidden from the user by talking about <span style=\"color: red;\"><strong>levels</strong></span>, i.e., quantities that can accumulate (state variables), and <span style=\"color: red;\"><strong>rates</strong></span>, i.e., quantities that influence the accumulation and/or depletion of levels (state derivatives).</p>
 <p>The System Dynamics modeling metaphor is widely used especially by researchers in the life sciences and social sciences.</p>
 <p>&nbsp;</p>
