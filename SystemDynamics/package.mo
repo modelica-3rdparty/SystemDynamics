@@ -8242,6 +8242,7 @@ This package contains a number of introductory examples that can be used to fami
 <li>Version 2.0: September 13, 2007 </li>
 <li>Version 2.1: October 16, 2013</li>
 <li>Version 2.1.1: January 13, 2020</li>
+<li>Version 2.1.2: February 3, 2023</li>
 </ul>
 <p>&nbsp;</p>
 <hr />

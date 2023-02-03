@@ -11,9 +11,11 @@ The documentation is included in the source code package.
 
 ## Current release
 
-Download [SystemDynamics v2.1.1 (2020-01-13)](../../archive/v2.1.1.zip)
+Download [SystemDynamics v2.1.2 (2022-02-03)](../../archive/v2.1.2.zip)
 
 #### Release notes
+* [Version v2.1.2 (2023-02-03)](../../archive/v2.1.2.zip)
+  * `SystemDynamics 2.1.2` is a release that updates the library to work with MSL 4.0.0.
 * [Version v2.1.1 (2020-01-13)](../../archive/v2.1.1.zip)
   * `SystemDynamics 2.1.1` is a bugfix release only to fix some annotations and illegaly used characters. It was at the same time updated to work with MSL 3.2.3. The license was changed (in agreement with the copyright holders) to 3-Clause BSD License.
 * [Version v2.1 (2013-10-16)](../../archive/v2.1.zip)
