@@ -1,4 +1,4 @@
-﻿package SystemDynamics "System Dynamics Library"
+package SystemDynamics "System Dynamics Library"
   package UsersGuide "User's Guide"
     extends Modelica.Icons.Information;
     package Overview "Overview of Library"
