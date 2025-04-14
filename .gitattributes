@@ -12,3 +12,6 @@
 # Denote all files that are truly binary and should not be modified.
 *.png binary
 *.jpg binary
+
+# Set language, same as https://github.com/modelica/ModelicaStandardLibrary/pull/4442
+*.mo linguist-language=Modelica
