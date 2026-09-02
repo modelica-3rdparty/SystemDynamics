@@ -1,7 +1,7 @@
 /* 	Implementation from http://thread.gmane.org/gmane.comp.misc.openmodelica/501/focus=507  */
 
 #include <math.h>
-#include <limits.h>
+#include <stdlib.h>
 double ext_RandomNormal(double timein)
 
 {
